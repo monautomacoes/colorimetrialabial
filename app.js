@@ -483,16 +483,16 @@ function renderEscolhendoCorSheet() {
 
   container.innerHTML = ESCOLHENDO_COR_DATA.map(section => `
     <div class="card-box" style="margin-bottom: 1.6rem;">
-      <div class="card-header" style="margin-bottom: 1rem;">
+      <div class="card-header" style="margin-bottom: 1rem; border-bottom: 1px solid #EFEAE3;">
         <div class="card-title-group">
-          <span style="width: 24px; height: 24px; border-radius: 50%; background: ${SecuritySanitizer.escapeHTML(section.swatch)}; display: inline-block; border: 2px solid rgba(255,255,255,0.3);"></span>
-          <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--rose-gold-light);">${SecuritySanitizer.escapeHTML(section.categoria)}</h3>
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: ${SecuritySanitizer.escapeHTML(section.swatch)}; display: inline-block; border: 2px solid #FFFFFF; box-shadow: 0 2px 8px rgba(0,0,0,0.15);"></span>
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 800; color: #1E1B18;">${SecuritySanitizer.escapeHTML(section.categoria)}</h3>
         </div>
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.2rem;">
         ${section.casos.map(caso => `
-          <div class="clinical-subcard" style="background: rgba(12, 8, 9, 0.85); display: flex; flex-direction: column;">
+          <div class="clinical-subcard" style="background: #FBF9F6; border: 1px solid #E6DFD5; border-radius: 12px; padding: 1.1rem; display: flex; flex-direction: column; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
             ${caso.img ? `
               <div class="real-lip-frame">
                 <img src="${SecuritySanitizer.escapeHTML(caso.img)}" alt="${SecuritySanitizer.escapeHTML(caso.desejo)}" class="real-lip-img" loading="lazy" />
@@ -501,16 +501,16 @@ function renderEscolhendoCorSheet() {
                 </div>
               </div>
             ` : ''}
-            <div class="subcard-title" style="color: var(--gold-accent); font-size: 0.95rem; margin-bottom: 0.5rem;">
+            <div class="subcard-title" style="color: #A3792C; font-size: 0.98rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
               <i class="fa-solid fa-bullseye"></i> ${SecuritySanitizer.escapeHTML(caso.desejo)}
             </div>
             <div class="subcard-content" style="flex: 1;">
-              ${caso.sugestao1 ? `<p style="margin-bottom: 0.35rem; font-size: 0.88rem;"><strong>Recomendação:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao1)}</p>` : ''}
-              ${caso.sugestao2 ? `<p style="margin-bottom: 0.35rem; font-size: 0.88rem;"><strong>Alternativa:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao2)}</p>` : ''}
-              ${caso.obs ? `<p style="font-size: 0.83rem; color: var(--text-secondary); margin-bottom: 0.35rem;"><em>${SecuritySanitizer.escapeHTML(caso.obs)}</em></p>` : ''}
-              ${caso.dica ? `<p style="font-size: 0.83rem; color: var(--alert-green); margin-bottom: 0.35rem;"><strong>${SecuritySanitizer.escapeHTML(caso.dica)}</strong></p>` : ''}
+              ${caso.sugestao1 ? `<p style="margin-bottom: 0.4rem; font-size: 0.9rem; color: #1E1B18;"><strong>Recomendação:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao1)}</p>` : ''}
+              ${caso.sugestao2 ? `<p style="margin-bottom: 0.4rem; font-size: 0.9rem; color: #1E1B18;"><strong>Alternativa:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao2)}</p>` : ''}
+              ${caso.obs ? `<p style="font-size: 0.85rem; color: #5C544D; margin-bottom: 0.4rem; font-style: italic;">${SecuritySanitizer.escapeHTML(caso.obs)}</p>` : ''}
+              ${caso.dica ? `<p style="font-size: 0.85rem; color: #15803D; margin-bottom: 0.4rem; font-weight: 700;"><strong>${SecuritySanitizer.escapeHTML(caso.dica)}</strong></p>` : ''}
               ${caso.paraPensar ? `
-                <div style="background: rgba(229, 168, 158, 0.08); border-left: 3px solid var(--rose-gold); padding: 0.5rem 0.75rem; border-radius: 4px; margin-top: 0.5rem; font-size: 0.8rem; color: var(--rose-gold-light);">
+                <div style="background: #F4EFEA; border-left: 3px solid #A3792C; padding: 0.65rem 0.85rem; border-radius: 6px; margin-top: 0.6rem; font-size: 0.82rem; color: #1E1B18; font-weight: 600;">
                   ${SecuritySanitizer.escapeHTML(caso.paraPensar)}
                 </div>
               ` : ''}
