@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Content Security Policy for Vercel & Production -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+
+  <title>Dani Pontelli — Guia Oficial de Bancada &amp; Colorimetria Labial</title>
+
+  <!-- Google Fonts: Cinzel (Clinical Authority), Plus Jakarta Sans (Clean UI Body), Outfit (Dosage & Needles) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Luxury Clinical Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement / Master Quote Header Bar -->
+  <div class="top-quote-banner">
+    <div class="quote-content">
+      <i class="fa-solid fa-quote-left quote-icon"></i>
+      <span>"A agulha a gente descarta, o aparelho fica em nosso espaço, mas a tinta vai na pele da cliente."</span>
+      <strong class="quote-author">— Dani Pontelli</strong>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <div class="brand-avatar-frame">
+          <span class="avatar-initials">DP</span>
+        </div>
+        <div class="brand-meta">
+          <h1 class="brand-title">Dani Pontelli Micropigmentação</h1>
+          <p class="brand-subtitle">Guia Oficial de Bancada &amp; Inteligência Técnica em Colorimetria Labial</p>
+        </div>
+      </div>
+
+      <!-- Quick Search Bar in Header for Rapid Lookup -->
+      <div class="header-quick-search">
+        <i class="fa-solid fa-bolt search-bolt-icon"></i>
+        <input type="text" id="global-quick-search" class="header-search-input" placeholder="Busca Rápida de CI ou Pigmento (ex: 12475, Hot, 77891)...">
+      </div>
+
+      <div class="header-actions">
+        <!-- Beginner Mode Toggle Switch -->
+        <label class="beginner-toggle-label" title="Ativar explicações didáticas para iniciantes">
+          <input type="checkbox" id="toggle-beginner-mode" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-text"><i class="fa-solid fa-graduation-cap"></i> Modo Didático</span>
+        </label>
+
+        <a href="https://www.instagram.com/danisilvapontello" target="_blank" rel="noopener" class="btn-instagram" title="Acessar Instagram da Dani Pontelli">
+          <i class="fa-brands fa-instagram"></i>
+          <span>@danisilvapontello</span>
+        </a>
+        <span class="badge-clinical" title="Proteção contra ataques XSS e Prompt Injection ativada"><i class="fa-solid fa-shield-halved"></i> v5.0 MVP VERCEL</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary Navigation Bar (Workflow Tabs) -->
+  <div class="nav-bar-container">
+    <div class="nav-scroll-wrapper">
+      <nav class="clinical-nav-tabs">
+        <button class="nav-tab-btn active" data-tab="tab-bancada">
+          <i class="fa-solid fa-notes-medical"></i>
+          <span>Assistente de Bancada</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-escolhendo-cor">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Escolhendo a Cor na Prática</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-classificacao">
+          <i class="fa-solid fa-images"></i>
+          <span>Diferenciação de Lábios</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-simulador">
+          <i class="fa-solid fa-vial-circle-check"></i>
+          <span>Batoque Lab Virtual</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-catalogo">
+          <i class="fa-solid fa-cubes-stacked"></i>
+          <span>Catálogo &amp; CIs</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-substituicao">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+          <span>Substituições Rápidas</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-quimica">
+          <i class="fa-solid fa-microscope"></i>
+          <span>Fundamentos &amp; Química</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="tab-degradacao">
+          <i class="fa-solid fa-box-archive"></i>
+          <span>Prontuário &amp; Banco de Frascos</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Work Area Container -->
+  <main class="main-workspace">
+
+    <!-- ==========================================
+         TAB 1: ASSISTENTE DE BANCADA (DIAGNOSIS ENGINE)
+         ========================================== -->
+    <section id="tab-bancada" class="workspace-tab active">
+
+      <div class="clinical-info-card">
+        <div class="info-card-icon">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="info-card-body">
+          <h3>Guia Prático para Iniciantes — Método Dani Pontelli</h3>
+          <p>Selecione a cor natural do lábio, o teste de estiramento da lâmina e o objetivo desejado. O sistema aplica a <strong>Regra da Soma Cromática</strong> e gera a fórmula exata em gotas no batoque, alertas de CIs químicos e parâmetros de agulha para o dermógrafo.</p>
+        </div>
+      </div>
+
+      <div class="clinical-grid">
+
+        <!-- Form Column: Patient Diagnostic -->
+        <div class="card-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-user-doctor card-icon"></i>
+              <h2>1. Anamnese &amp; Fator Fisiológico</h2>
+            </div>
+            <span class="step-indicator">Etapas 1 a 4</span>
+          </div>
+
+          <form id="form-diagnostico-bancada" onsubmit="return false;">
+
+            <!-- STEP 1: Lip Base Selection Cards -->
+            <div class="form-section">
+              <label class="field-label">
+                <i class="fa-solid fa-lips"></i> Etapa 1: Fototipo e Cor Natural do Lábio
+              </label>
+
+              <!-- Beginner Didactic Tip Box -->
+              <div class="beginner-tip-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span><strong>Dica Didática:</strong> Lábios pálidos recebem bem qualquer tom. Lábios escuros NUNCA devem receber cor fria ou vermelho puro sem neutralização prévia (risco de cor de beterraba).</span>
+              </div>
+
+              <div class="lip-type-selector-grid">
+                <div class="lip-select-card active" data-lip="palido">
+                  <span class="lip-swatch" style="background: #F8C3BC;"></span>
+                  <div class="lip-card-info">
+                    <strong>Pálido</strong>
+                    <small>Sem cor / Anêmico</small>
+                  </div>
+                </div>
+
+                <div class="lip-select-card" data-lip="rosado">
+                  <span class="lip-swatch" style="background: #E8837D;"></span>
+                  <div class="lip-card-info">
+                    <strong>Rosado</strong>
+                    <small>Saudável / Vivacidade</small>
+                  </div>
+                </div>
+
+                <div class="lip-select-card" data-lip="escuro_leve">
+                  <span class="lip-swatch" style="background: #B45F54;"></span>
+                  <div class="lip-card-info">
+                    <strong>Escuro Leve</strong>
+                    <small>Analogia: Voal</small>
+                  </div>
+                </div>
+
+                <div class="lip-select-card" data-lip="escuro_medio">
+                  <span class="lip-swatch" style="background: #7E3831;"></span>
+                  <div class="lip-card-info">
+                    <strong>Escuro Médio</strong>
+                    <small>Voal com Forro</small>
+                  </div>
+                </div>
+
+                <div class="lip-select-card" data-lip="escuro_intenso">
+                  <span class="lip-swatch" style="background: #421C18;"></span>
+                  <div class="lip-card-info">
+                    <strong>Escuro Intenso</strong>
+                    <small>Blackout / Melanínico</small>
+                  </div>
+                </div>
+
+                <div class="lip-select-card" data-lip="masculino">
+                  <span class="lip-swatch" style="background: #C47B62;"></span>
+                  <div class="lip-card-info">
+                    <strong>Masculino</strong>
+                    <small>Neutralização / Natural</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hidden input for lip selection -->
+              <input type="hidden" id="sel-tipo-labio" value="palido">
+            </div>
+
+            <!-- STEP 2: Lamina Texture Selection -->
+            <div class="form-section">
+              <label class="field-label">
+                <i class="fa-solid fa-layer-group"></i> Etapa 2: Textura e Estiramento da Lâmina
+              </label>
+
+              <!-- Beginner Didactic Tip Box -->
+              <div class="beginner-tip-box">
+                <i class="fa-solid fa-hand-holding-hand"></i>
+                <span><strong>Como Testar:</strong> Estique o lábio com dois dedos. Se ficar transparente/translúcido, a lâmina é FINA (reflete fácil). Se continuar opaco e denso, é RÍGIDA (precisa de mais branco/dióxido).</span>
+              </div>
+
+              <div class="texture-selector-grid" id="opt-texture-grid">
+                <button type="button" class="texture-btn active" data-val="fina">
+                  <i class="fa-solid fa-feather"></i>
+                  <div class="texture-btn-meta">
+                    <strong>Lâmina Fina (Translúcida)</strong>
+                    <small>Fica transparente ao esticar. Alta resposta de cor.</small>
+                  </div>
+                </button>
+
+                <button type="button" class="texture-btn" data-val="rigida">
+                  <i class="fa-solid fa-shield"></i>
+                  <div class="texture-btn-meta">
+                    <strong>Lâmina Rígida (Opaca / Densa)</strong>
+                    <small>Espessa e resistente. Alta melanina profunda.</small>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Goal Selection -->
+            <div class="form-section">
+              <label class="field-label" for="sel-objetivo">
+                <i class="fa-solid fa-bullseye"></i> Etapa 3: Objetivo Alvo do Procedimento
+              </label>
+              <select id="sel-objetivo" class="custom-select">
+                <!-- Dynamically filled according to lip selection -->
+              </select>
+            </div>
+
+            <!-- STEP 4: Machine Technique -->
+            <div class="form-section">
+              <label class="field-label" for="sel-tecnica">
+                <i class="fa-solid fa-wand-magic"></i> Etapa 4: Efeito Desejado na Implantação
+              </label>
+              <select id="sel-tecnica" class="custom-select">
+                <option value="pixel">Efeito Revitalização Pixel (Natural / Transparência)</option>
+                <option value="batom">Efeito Batom (Saturação Homogênea / Densidade)</option>
+                <option value="neutralizacao">Neutralização Gradual (Apenas Clareamento de Melanina)</option>
+              </select>
+            </div>
+
+            <button type="button" id="btn-gerar-protocolo" class="btn-action-primary">
+              <i class="fa-solid fa-calculator"></i>
+              <span>GERAR FICHA OFICIAL DE BANCADA</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Output Column: Clinical Record Card -->
+        <div class="card-box card-result-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-clipboard-check card-icon"></i>
+              <h2>Ficha Técnica de Bancada</h2>
+            </div>
+            <button id="btn-copiar-relatorio" class="btn-action-outline">
+              <i class="fa-solid fa-copy"></i>
+              <span>Copiar Prontuário</span>
+            </button>
+          </div>
+
+          <div id="resultado-bancada-container">
+            <div class="empty-state">
+              <i class="fa-solid fa-mortar-pestle empty-icon"></i>
+              <h3>Aguardando Diagnóstico</h3>
+              <p>Selecione os dados do lábio ao lado e clique em <strong>Gerar Ficha Oficial de Bancada</strong> para visualizar a fórmula de pigmentos e parâmetros de agulha.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 2: ESCOLHENDO A COR NA PRÁTICA (CONTEÚDO COMPLETO DO E-BOOK)
+         ========================================== -->
+    <section id="tab-escolhendo-cor" class="workspace-tab">
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-book-open card-icon"></i>
+            <h2>Escolhendo a Cor na Prática — Guia Oficial Dani Pontelli</h2>
+          </div>
+          <span class="step-indicator">E-book Prático de Bancada</span>
+        </div>
+
+        <p class="section-lead">
+          Guia de formulação técnica e escolha de cor para cada tipo de lábio. Aprenda a combinar os grupos cromáticos e evitar erros de cicatrização:
+        </p>
+
+        <div id="escolhendo-cor-container" class="escolhendo-cor-wrapper">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 3: CLASSIFICAÇÃO & DIFERENCIAÇÃO DOS LÁBIOS (GUIA FOTOGRÁFICO VISUAL)
+         ========================================== -->
+    <section id="tab-classificacao" class="workspace-tab">
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-images card-icon"></i>
+            <h2>Diferenciação Fotográfica dos Lábios (Guia Visual de Fotos)</h2>
+          </div>
+          <span class="step-indicator">Manual da Colorimetria — Página 5</span>
+        </div>
+
+        <p class="section-lead">
+          Utilize as referências fotográficas abaixo para identificar a cor natural e a lâmina labial da paciente na bancada:
+        </p>
+
+        <div class="lip-classification-grid" id="lip-classification-grid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 4: BATOQUE LAB VIRTUAL (INTERACTIVE SIMULATOR)
+         ========================================== -->
+    <section id="tab-simulador" class="workspace-tab">
+
+      <div class="clinical-info-card">
+        <div class="info-card-icon">
+          <i class="fa-solid fa-vial"></i>
+        </div>
+        <div class="info-card-body">
+          <h3>Batoque Lab — Simulador de Misturas e Degradação</h3>
+          <p>Adicione gotas ao batoque virtual para testar proporções e visualizar o comportamento dos CIs químicos em tempo real. O resultado final se soma sempre à cor natural do lábio.</p>
+        </div>
+      </div>
+
+      <div class="clinical-grid">
+
+        <!-- Batoque Controls -->
+        <div class="card-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-droplet card-icon"></i>
+              <h2>Batoque de Bancada (Dosagem)</h2>
+            </div>
+            <button type="button" class="btn-text-danger" onclick="resetBatoque()">
+              <i class="fa-solid fa-trash-can"></i> Esvaziar
+            </button>
+          </div>
+
+          <div class="batoque-workspace">
+            <div class="batoque-outer-ring">
+              <div id="batoque-preview-fill" class="batoque-inner-fill" style="background: #E8998D;">
+                <div class="batoque-drops-badge">
+                  <span id="batoque-drops-count">0</span>
+                  <small>GOTAS</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="batoque-pills-list" id="batoque-drops-pills">
+              <span class="pill-empty">Nenhuma gota adicionada ainda</span>
+            </div>
+          </div>
+
+          <div class="batoque-buttons-grid">
+            <button type="button" class="btn-drop-add" onclick="addDrop('Laranja Neutralizador (CI 21110)', '#FF7700', '21110')">
+              <span class="drop-dot" style="background: #FF7700;"></span>
+              +1 Laranja Neutralizador
+            </button>
+            <button type="button" class="btn-drop-add" onclick="addDrop('Vermelho Rosado (CI 12475)', '#D83A56', '12475')">
+              <span class="drop-dot" style="background: #D83A56;"></span>
+              +1 Vermelho Rosado (Frio)
+            </button>
+            <button type="button" class="btn-drop-add" onclick="addDrop('Vermelho Quente (CI 56110)', '#E62A2A', '56110')">
+              <span class="drop-dot" style="background: #E62A2A;"></span>
+              +1 Vermelho Quente (Batom)
+            </button>
+            <button type="button" class="btn-drop-add" onclick="addDrop('Branco Dióxido (CI 77891)', '#FFFFFF', '77891')">
+              <span class="drop-dot" style="background: #FFFFFF; border: 1px solid #ccc;"></span>
+              +1 Branco Dióxido
+            </button>
+            <button type="button" class="btn-drop-add" onclick="addDrop('Amarelo Canário (CI 11741)', '#FBEA55', '11741')">
+              <span class="drop-dot" style="background: #FBEA55;"></span>
+              +1 Amarelo Canário
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulation Result -->
+        <div class="card-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-eye card-icon"></i>
+              <h2>Previsão Fisiológica &amp; Análise CI</h2>
+            </div>
+          </div>
+
+          <div class="simulation-view">
+            <div class="lip-evolution-row">
+              <div class="evolution-item">
+                <span class="evolution-label">LÁBIO DA CLIENTE</span>
+                <div id="preview-labio-inicial" class="lip-preview-capsule" style="background: #F8C3BC;"></div>
+                <strong id="label-labio-inicial" class="evolution-name">Pálido</strong>
+              </div>
+
+              <div class="evolution-arrow">
+                <i class="fa-solid fa-right-long"></i>
+              </div>
+
+              <div class="evolution-item">
+                <span class="evolution-label">CICATRIZADO ESTIMADO</span>
+                <div id="preview-labio-resultado" class="lip-preview-capsule" style="background: #D83A56;"></div>
+                <strong id="label-labio-resultado" class="evolution-name">Rosa Vivo</strong>
+              </div>
+            </div>
+
+            <!-- Cotonete Swab Test Preview -->
+            <div class="swab-test-box">
+              <h4><i class="fa-solid fa-stamp"></i> Teste do Cotonete Molhado (Degradação Fiel)</h4>
+              <div class="swab-graphic">
+                <div class="swab-stick"></div>
+                <div id="swab-tip" class="swab-tip" style="background: #E8998D;"></div>
+                <div id="swab-smear" class="swab-smear" style="background: linear-gradient(90deg, #E8998D 0%, rgba(232,153,141,0.1) 100%);"></div>
+              </div>
+              <small>Simulação do tom diluído em tecido tecidual.</small>
+            </div>
+
+            <!-- CI Composition Breakdown -->
+            <div class="ci-breakdown-box" id="sim-ci-breakdown">
+              <h4><i class="fa-solid fa-atom"></i> CIs Predominantes na Mistura:</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem;">Adicione gotas ao batoque para visualizar a análise técnica dos Color Index.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 5: CATÁLOGO DE PIGMENTOS & BUSCA POR CI
+         ========================================== -->
+    <section id="tab-catalogo" class="workspace-tab">
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-magnifying-glass card-icon"></i>
+            <h2>Catálogo Oficial de Pigmentos &amp; Busca por CI</h2>
+          </div>
+          <span class="count-badge" id="catalog-count">0 Pigmentos</span>
+        </div>
+
+        <div class="filter-toolbar">
+          <div class="search-input-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="input-search-pigment" class="custom-input" placeholder="Buscar por Nome, Marca ou CI (ex: 12475, Easy Glow, Hot, 77891)...">
+          </div>
+
+          <select id="filter-category" class="custom-select" style="max-width: 280px;">
+            <option value="todos">Todas as Categorias</option>
+            <option value="laranjas_e_pessegos_neutralizadores">Laranjas &amp; Neutralizadores</option>
+            <option value="vermelhos_fundo_rosado">Vermelhos Fundo Rosado</option>
+            <option value="vermelhos_fundo_vermelho">Vermelhos Fundo Vermelho</option>
+            <option value="rosas">Rosas</option>
+            <option value="brancos_e_alta_carga_de_dioxido">Brancos &amp; Dióxido de Titânio</option>
+          </select>
+        </div>
+
+        <div class="pigments-grid" id="pigment-cards-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 6: TABELA DE SUBSTITUIÇÃO DIRETA (PRONTA & VISÍVEL)
+         ========================================== -->
+    <section id="tab-substituicao" class="workspace-tab">
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-arrow-rotate-left card-icon"></i>
+            <h2>Tabela de Substituição Direta de Bancada (Comparativo de Marcas)</h2>
+          </div>
+          <span class="step-indicator">Tabela Oficial de Substituição</span>
+        </div>
+
+        <p class="section-lead">
+          Se o frasco principal recomendado estiver esgotado no seu estoque, consulte abaixo a lista imediata de frascos substitutos equivalentes por base química e CI:
+        </p>
+
+        <div class="substitutions-container" id="substituicoes-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 7: FUNDAMENTOS QUÍMICOS & ANAMNESE
+         ========================================== -->
+    <section id="tab-quimica" class="workspace-tab">
+
+      <div class="clinical-info-card">
+        <div class="info-card-icon">
+          <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+        <div class="info-card-body">
+          <h3>Fundamentos Teóricos Oficiais — Método Dani Pontelli</h3>
+          <p>O domínio da química dos pigmentos (Orgânicos vs Inorgânicos), da granulometria e dos testes de bancada é o que diferencia uma micropigmentadora comum de uma especialista internacional.</p>
+        </div>
+      </div>
+
+      <div class="card-box" style="margin-bottom: 2rem;">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-atom card-icon"></i>
+            <h2>Química dos Pigmentos, CIs &amp; Granulometria</h2>
+          </div>
+        </div>
+
+        <div class="accordions-wrapper" id="accordion-quimica-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-clipboard-question card-icon"></i>
+            <h2>Roteiro de Anamnese em 5 Perguntas</h2>
+          </div>
+        </div>
+
+        <div class="anamnese-wrapper" id="anamnese-list-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TAB 8: PRONTUÁRIO & BANCO DE FRASCOS
+         ========================================== -->
+    <section id="tab-degradacao" class="workspace-tab">
+      <div class="card-box">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-box-archive card-icon"></i>
+            <h2>Prontuário &amp; Banco de Frascos Pessoal</h2>
+          </div>
+
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button type="button" class="btn-action-primary" style="width: auto; margin: 0; padding: 0.5rem 0.9rem; font-size: 0.82rem;" onclick="toggleBottleRegisterForm()">
+              <i class="fa-solid fa-file-arrow-up"></i> Cadastrar Novo Frasco (com Foto/Arquivo)
+            </button>
+
+            <button type="button" class="btn-action-outline" style="padding: 0.5rem 0.8rem; font-size: 0.82rem;" onclick="triggerImportJSON()">
+              <i class="fa-solid fa-file-import"></i> Importar Banco (.JSON)
+            </button>
+
+            <button type="button" class="btn-action-outline" style="padding: 0.5rem 0.8rem; font-size: 0.82rem;" onclick="exportBottleDatabaseJSON()">
+              <i class="fa-solid fa-file-export"></i> Exportar DB (.JSON)
+            </button>
+
+            <!-- Hidden File Input for JSON DB import -->
+            <input type="file" id="input-import-db-json" accept=".json" style="display: none;" onchange="handleImportJSONFile(event)">
+          </div>
+        </div>
+
+        <!-- Inline Registration Form Panel for Bottles & Images -->
+        <div class="bottle-register-form-panel" id="bottle-register-panel" style="display: none;">
+          <h3 class="form-panel-title"><i class="fa-solid fa-plus-circle"></i> Cadastrar Novo Frasco no Banco de Dados</h3>
+          
+          <div class="form-panel-grid">
+            <div class="form-group">
+              <label class="field-label">Marca do Frasco *</label>
+              <input type="text" id="reg-marca" class="custom-input" placeholder="Ex: Easy Glow, RBKollors, Eternal Ink">
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Nome do Pigmento *</label>
+              <input type="text" id="reg-nome" class="custom-input" placeholder="Ex: Sunshine Orange, Hot, Red Velvet">
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Color Index (CI) *</label>
+              <input type="text" id="reg-ci" class="custom-input" placeholder="Ex: 21110 | 77891 | 12475">
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Categoria Cromática</label>
+              <select id="reg-categoria" class="custom-select">
+                <option value="laranjas_e_pessegos_neutralizadores">Laranjas &amp; Neutralizadores</option>
+                <option value="vermelhos_fundo_rosado">Vermelhos Fundo Rosado</option>
+                <option value="vermelhos_fundo_vermelho">Vermelhos Fundo Vermelho</option>
+                <option value="rosas">Rosas</option>
+                <option value="brancos_e_alta_carga_de_dioxido">Brancos &amp; Dióxido de Titânio</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Cor da Amostra (Hex)</label>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <input type="color" id="reg-color-picker" value="#E8998D" style="width: 45px; height: 42px; border: none; border-radius: 8px; cursor: pointer; background: transparent;">
+                <input type="text" id="reg-hex" class="custom-input" value="#E8998D" style="flex: 1;">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Upload de Foto do Frasco / Degradação (Arquivo Imagem)</label>
+              <input type="file" id="reg-file-image" class="custom-input" accept="image/*">
+              <small style="color: var(--text-muted); font-size: 0.72rem; margin-top: 0.2rem; display: block;">Envie a foto do rótulo ou do teste no cotonete.</small>
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label class="field-label">Observações Técnicas de Bancada</label>
+              <input type="text" id="reg-obs" class="custom-input" placeholder="Ex: Frasco frio, exige aquecimento com CI 21110. Excelente fixação em 1ª passada.">
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.8rem; margin-top: 1rem;">
+            <button type="button" class="btn-action-outline" onclick="toggleBottleRegisterForm()">Cancelar</button>
+            <button type="button" class="btn-action-primary" style="width: auto; margin: 0;" onclick="saveNewBottleFromForm()">
+              <i class="fa-solid fa-save"></i> Salvar e Sincronizar Banco de Dados
+            </button>
+          </div>
+        </div>
+
+        <p class="section-lead">
+          Seus frascos cadastrados são sincronizados automaticamente com o banco de dados do sistema, ficando disponíveis na busca rápida global e no catálogo oficial.
+        </p>
+
+        <div class="degradacao-grid" id="degradacao-cards-grid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-wrapper" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p>Guia Oficial de Bancada &copy; 2026 — <strong>Dani Pontelli Micropigmentação</strong></p>
+      <p class="footer-sub">Método Internacional de Colorimetria Labial</p>
+      <a href="https://www.instagram.com/danisilvapontello" target="_blank" rel="noopener" class="footer-link">
+        <i class="fa-brands fa-instagram"></i> Siga no Instagram: @danisilvapontello
+      </a>
+    </div>
+  </footer>
+
+  <!-- App Main Logic JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
