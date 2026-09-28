@@ -1,7 +1,7 @@
 {
   "metadados_sistema": {
-    "nome_aplicativo": "Dani Pontelli — Guia Oficial de Bancada & Colorimetria Labial",
-    "autora_metodo": "Dani Pontelli",
+    "nome_aplicativo": "Dani Pontello — Guia Oficial de Bancada & Colorimetria Labial",
+    "autora_metodo": "Dani Pontello",
     "titulacao": "Especialista e Referência Internacional em Micropigmentação Labial",
     "versao": "5.0.0-PRO-CLINICAL",
     "frase_mestra": "A agulha a gente descarta, o aparelho fica em nosso espaço, mas a tinta vai na pele da cliente.",
@@ -53,7 +53,7 @@
       "micronizada": {
         "descricao": "Partículas minúsculas, homogêneas e esféricas de tamanho regular.",
         "comportamento": "Facilita a implantação imediata com trauma mínimo. A cor revela na 1ª passada com cicatrização fiel e uniforme.",
-        "adaptacao": "Ideal para mão leve e precisa. Granulometria de escolha da especialista Dani Pontelli."
+        "adaptacao": "Ideal para mão leve e precisa. Granulometria de escolha da especialista Dani Pontello."
       },
       "polimerizada": {
         "descricao": "Partículas micronizadas revestidas por uma cápsula de polímero protetor.",
@@ -117,7 +117,7 @@
     {"etapa": 3, "pergunta": "Você costuma usar batom no dia a dia? Se sim, de qual tonalidade?"},
     {"etapa": 4, "pergunta": "Prefere o resultado puxado para o Rosado ou para o Avermelhado/Pêssego?"},
     {"etapa": 5, "pergunta": "Tem histórico de herpes labial simples? (Orientar profilaxia prévia com antiviral se necessário)."},
-    {"regra_exibicao": "Apresente sempre fotos cicatrizadas de 60 dias da especialista Dani Pontelli para alinhar a expectativa da cliente com a fisiologia tecidual real."}
+    {"regra_exibicao": "Apresente sempre fotos cicatrizadas de 60 dias da especialista Dani Pontello para alinhar a expectativa da cliente com a fisiologia tecidual real."}
   ],
   "protocolos_de_formulacao_e_misturas": [
     {
@@ -143,7 +143,7 @@
       "tipo_labio": "pálido",
       "desejo_cliente": "rosa intenso",
       "sugestoes_gotas": [
-        {"opcao": "Fórmula Vibrante Dani Pontelli", "receita": "5 gotas de Vermelho de Fundo Rosado (CI 12475) + 2 gotas de Laranja Neutralizador (CI 21110) para aquecer."}
+        {"opcao": "Fórmula Vibrante Dani Pontello", "receita": "5 gotas de Vermelho de Fundo Rosado (CI 12475) + 2 gotas de Laranja Neutralizador (CI 21110) para aquecer."}
       ],
       "parametros_tecnicos": {
         "agulha": "1RL 0.25mm ou 0.30mm",
@@ -304,7 +304,7 @@
       "tipo_labio": "escuro intenso (analogia: blackout)",
       "desejo_cliente": "neutralização obrigatória de 1ª sessão",
       "sugestoes_gotas": [
-        {"opcao": "Fórmula Clareadora Suprema Dani Pontelli", "receita": "6 gotas de Branco Dióxido (CI 77891) + 6 gotas de Laranja Neutralizador (CI 21110) [Proporção 1:1]."},
+        {"opcao": "Fórmula Clareadora Suprema Dani Pontello", "receita": "6 gotas de Branco Dióxido (CI 77891) + 6 gotas de Laranja Neutralizador (CI 21110) [Proporção 1:1]."},
         {"opcao": "Fórmula Pêssego Clareador", "receita": "6 gotas de Laranja + 6 gotas de Rosa Claro com alta carga de Dióxido."}
       ],
       "parametros_tecnicos": {

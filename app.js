@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DANI PONTELLI — GUIA OFICIAL DE BANCADA & COLORIMETRIA LABIAL
+   DANI PONTELLO — GUIA OFICIAL DE BANCADA & COLORIMETRIA LABIAL
    Application Logic & Cybersecurity Engine (Senior UX & Security Standard)
    ========================================================================== */
 
@@ -319,7 +319,7 @@ async function loadData() {
     const resp = await fetch('dani_data.json');
     if (!resp.ok) throw new Error('Falha HTTP ao carregar dani_data.json');
     DANI_DATA = await resp.json();
-    console.log('Dados Dani Pontelli v5.0 protegidos e carregados:', DANI_DATA);
+    console.log('Dados Dani Pontello v5.0 protegidos e carregados:', DANI_DATA);
     renderAllComponents();
   } catch (err) {
     console.error('Erro ao carregar dani_data.json:', err);
@@ -621,7 +621,7 @@ function generateOfficialProtocol() {
       </div>
     `).join('');
   } else {
-    receitaHtml = '<p style="color: var(--text-muted);">Consulte o frasco base recomendado no manual Dani Pontelli.</p>';
+    receitaHtml = '<p style="color: var(--text-muted);">Consulte o frasco base recomendado no manual Dani Pontello.</p>';
   }
 
   let alertasArray = [];
@@ -636,7 +636,7 @@ function generateOfficialProtocol() {
     <div class="result-block">
       <div class="protocol-badge-header">
         <div>
-          <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">PROTOCOLO OFICIAL DANI PONTELLI</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">PROTOCOLO OFICIAL DANI PONTELLO</span>
           <h3 class="protocol-title">${SecuritySanitizer.escapeHTML(protocol.desejo_cliente.toUpperCase())} — LÁBIO ${SecuritySanitizer.escapeHTML(lipType.toUpperCase())}</h3>
         </div>
         <span class="return-pill"><i class="fa-solid fa-calendar-check"></i> Retorno: ${protocol.intervalo_retorno_dias || 30} dias</span>
@@ -902,7 +902,7 @@ function renderPigmentCatalog() {
 
   grid.innerHTML = allPigments.map(p => `
     <div class="pigment-card ${p.favorito_autora ? 'fav-author' : ''}">
-      ${p.favorito_autora ? '<span class="badge-fav"><i class="fa-solid fa-star"></i> FAVORITO DANI PONTELLI</span>' : ''}
+      ${p.favorito_autora ? '<span class="badge-fav"><i class="fa-solid fa-star"></i> FAVORITO DANI PONTELLO</span>' : ''}
       ${p.img ? `<img src="${SecuritySanitizer.sanitizeInput(p.img)}" class="bottle-card-img" alt="Foto Frasco">` : ''}
       <div class="pigment-swatch-circle" style="background: ${SecuritySanitizer.escapeHTML(p.cor_hex || '#E8998D')};"></div>
       <div class="pigment-brand">${SecuritySanitizer.escapeHTML(p.marca)}</div>
@@ -1162,7 +1162,7 @@ function exportBottleDatabaseJSON() {
   const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(userDegradacaoCards, null, 2));
   const downloadAnchor = document.createElement('a');
   downloadAnchor.setAttribute("href", dataStr);
-  downloadAnchor.setAttribute("download", `banco_de_dados_frascos_dani_pontelli_${Date.now()}.json`);
+  downloadAnchor.setAttribute("download", `banco_de_dados_frascos_dani_pontello_${Date.now()}.json`);
   document.body.appendChild(downloadAnchor);
   downloadAnchor.click();
   downloadAnchor.remove();

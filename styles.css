@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DANI PONTELLI — GUIA OFICIAL DE BANCADA & COLORIMETRIA LABIAL
+   DANI PONTELLO — GUIA OFICIAL DE BANCADA & COLORIMETRIA LABIAL
    Luxury Clinical UI/UX Theme (Senior UX Specialist & Security Standard)
    ========================================================================== */
 
@@ -1643,4 +1643,53 @@ footer.app-footer {
   align-items: center;
   gap: 0.35rem;
 }
+
+/* ==========================================
+   FIXED FLOATING CORNER BRAND LOGO BADGE
+   ========================================== */
+.corner-brand-badge {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 999;
+  background: rgba(10, 7, 8, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-medium);
+  padding: 0.4rem 0.85rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75);
+  transition: var(--transition);
+}
+
+.corner-brand-badge:hover {
+  border-color: var(--rose-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(229, 168, 158, 0.35);
+}
+
+.corner-logo-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  color: #0A0708;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corner-logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--rose-gold-light);
+  letter-spacing: 0.5px;
+}
+
 
