@@ -124,6 +124,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '1. Lábio Pálido',
     subtitulo: 'Sem pigmentação natural / Anêmico',
     corHex: '#F8C3BC',
+    realImg: 'assets/real_lips/palido_rosa_claro.jpg',
     analogia: 'Lâmina Transparente / Sem Melanina',
     estiramento: 'Translúcido ao esticar',
     descricao: 'Lábio muito claro, sem cor ou desbotado. Recebe bem qualquer tom de pigmento (rosa claro, rosa intenso, cor de boca ou vermelho).',
@@ -135,6 +136,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '2. Lábio Rosado',
     subtitulo: 'Vivacidade Natural / Saudável',
     corHex: '#E8837D',
+    realImg: 'assets/real_lips/rosado_intensificar.jpg',
     analogia: 'Base Natural Equilibrada',
     estiramento: 'Translúcido suave',
     descricao: 'Possui boa cor rosada natural. A cliente deseja apenas intensificar o tom já existente ou transformar em um vermelho batom.',
@@ -146,6 +148,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '3. Lábio Escuro Leve',
     subtitulo: 'Analogia da Cortina: Voal',
     corHex: '#B45F54',
+    realImg: 'assets/real_lips/escuro_leve_voal.jpg',
     analogia: 'Nuance levemente escura',
     estiramento: 'Fina / Levemente vascularizada',
     descricao: 'Possui apenas uma leve sombra escura ou acinzentada. Não exige neutralização pesada e não soma criticamente com a cor escolhida.',
@@ -157,6 +160,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '4. Lábio Escuro Médio',
     subtitulo: 'Analogia: Voal com Forro',
     corHex: '#7E3831',
+    realImg: 'assets/real_lips/escuro_medio_voal_forro.jpg',
     analogia: 'Melanina Moderada',
     estiramento: 'Lâmina Média',
     descricao: 'Nítida necessidade de neutralização. Em 90% dos casos, o resultado cicatrizado da 1ª sessão será um rosado/pêssego saudável.',
@@ -168,6 +172,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '5. Escuro Médio — Textura Fina',
     subtitulo: 'Vascularização Dérmica',
     corHex: '#9A4B40',
+    realImg: 'assets/real_lips/escuro_medio_resultado.jpg',
     analogia: 'Camada Dérmica Fina & Transparente',
     estiramento: 'Extremamente Translúcido ao esticar',
     descricao: 'Lábio escuro devido à altíssima vascularização em camada dérmica muito fina.',
@@ -179,6 +184,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '6. Lábio Manchado / Assimétrico',
     subtitulo: 'Zonas Hiperpigmentadas',
     corHex: '#8C4A40',
+    realImg: 'assets/real_lips/levemente_escurecido_resultado.jpg',
     analogia: 'Melanina Desigual',
     estiramento: 'Variado',
     descricao: 'Presença de manchas escuras isoladas no bordo ou no centro labial, intercaladas com áreas mais pálidas.',
@@ -190,6 +196,7 @@ const LIP_CLASSIFICATIONS_DATA = [
     titulo: '7. Lábio Escuro Intenso',
     subtitulo: 'Analogia: Cortina Blackout',
     corHex: '#421C18',
+    realImg: 'assets/real_lips/escuro_intenso_blackout.jpg',
     analogia: 'Lâmina Rígida / Alta Melanina',
     estiramento: 'Rígido, espesso e não fica transparente',
     descricao: 'Lâmina labial espessa e rígida com alta concentração de melanócitos. Exige obrigatoriamente no mínimo 2 sessões para clareamento.',
@@ -206,6 +213,7 @@ const ESCOLHENDO_COR_DATA = [
     casos: [
       {
         desejo: 'Se a cliente quer Rosa Claro',
+        img: 'assets/real_lips/palido_rosa_claro.jpg',
         sugestao1: 'Sugestão 1: Usar qualquer um da família dos rosas puro.',
         sugestao2: 'Sugestão 2: Mistura de vermelho com branco na proporção de 8 gotas de vermelho para 4 gotas de branco.',
         obs: 'Observação: Não precisa ser necessariamente branco; pode usar rosa seco ou pêssego (ex: 6 gotas de vermelho + 6 gotas de rosa seco/pêssego).',
@@ -213,11 +221,13 @@ const ESCOLHENDO_COR_DATA = [
       },
       {
         desejo: 'Se a cliente quer Rosa Intenso',
+        img: 'assets/real_lips/palido_rosa_intenso.jpg',
         sugestao1: 'Sugestão: Usar qualquer vermelho do grupo dos vermelhos de fundo rosado.',
         paraPensar: 'PARA PENSAR: Se a cor não tiver CI 21110 na composição e tiver somente o CI 12475, aquecer obrigatoriamente para cicatrizar bonito. O 12475 é um CI frio; sem aquecer cicatriza rosa envelhecido. Proporção: 1 gota de laranja a cada 4 gotas de vermelho.'
       },
       {
         desejo: 'Meio Termo (Cor de Boca Nude)',
+        img: 'assets/real_lips/palido_cor_boca.jpg',
         sugestao1: 'Sugestão 1 (Mais Intenso): Misturar vermelho de fundo rosado + vermelho de fundo avermelhado (meio a meio / 1:1).',
         sugestao2: 'Sugestão 2 (Mais Claro): Misturar vermelho de fundo avermelhado + rosa (meio a meio / 1:1).',
         obs: 'Observação: Indicado para clientes indecisas que não querem nem rosa puro nem vermelho batom.',
@@ -225,6 +235,7 @@ const ESCOLHENDO_COR_DATA = [
       },
       {
         desejo: 'Se a cliente quiser Vermelho Batom',
+        img: 'assets/real_lips/palido_vermelho.jpg',
         sugestao1: 'Sugestão: Usar vermelho do grupo avermelhado puro.',
         dica: 'DICA DE BANCADA: Se o pigmento tiver o fundo muito alaranjado, misture vermelho de fundo rosado para quebrar o reflexo e teste no cotonete molhado.',
         paraPensar: 'PARA PENSAR: Para efeito de batom, saturar mais na implantação usando técnica ideal para diminuir o processo inflamatório.'
@@ -237,11 +248,13 @@ const ESCOLHENDO_COR_DATA = [
     casos: [
       {
         desejo: 'Se a cliente quiser Intensificar o Rosa Existente',
+        img: 'assets/real_lips/rosado_intensificar.jpg',
         sugestao1: 'Sugestão: Usar qualquer pigmento vermelho do grupo dos vermelhos de fundo rosado.',
         obs: 'Lembrando: se usar puro o CI 12475 vai ficar frio. Indico aquecer com laranja que tenha branco na composição (1 gota de laranja para cada 4 gotas de vermelho).'
       },
       {
         desejo: 'Se a cliente quer Vermelho Batom',
+        img: 'assets/real_lips/rosado_vermelho.jpg',
         sugestao1: 'Sugestão: Usar vermelho do grupo de degradação vermelho puro.'
       }
     ]
@@ -252,10 +265,12 @@ const ESCOLHENDO_COR_DATA = [
     casos: [
       {
         desejo: 'Se o cliente quiser Avermelhado Natural',
+        img: 'assets/real_lips/masculino_avermelhado.jpg',
         sugestao1: 'Sugestão: Usar pigmento vermelho de tom avermelhado. Se for levemente escuro, acrescente na mistura laranja e branco (1 gota de laranja com branco a cada 4 gotas de cor).'
       },
       {
         desejo: 'Neutralização Grau Médio Masculina',
+        img: 'assets/real_lips/masculino_neutralizacao.jpg',
         sugestao1: 'Sugestão: A cada 4 gotas de laranja neutralizador, colocar 2 gotas de vermelho tom rosado.',
         dica: 'DICA: Pode seguir as mesmas dicas de neutralização feminina, mudando apenas os movimentos de implantação para NÃO definir ou marcar o contorno dos lábios.'
       }
@@ -267,17 +282,20 @@ const ESCOLHENDO_COR_DATA = [
     casos: [
       {
         desejo: 'Levemente Escurecidos (Analogia: Voal)',
+        img: 'assets/real_lips/levemente_escurecido_resultado.jpg',
         sugestao1: 'Não precisa neutralizar pesado. A nuance escura pode somar com o pigmento; acrescente 1 pitada de branco e 1 pitada de laranja se a cor escolhida não tiver.',
         paraPensar: 'Quando o lábio é levemente escuro, essa nuance escura pode somar com o pigmento. O laranja entra para aquecer.'
       },
       {
         desejo: 'Escuro Médio (Analogia: Voal com Forro)',
+        img: 'assets/real_lips/escuro_medio_resultado.jpg',
         sugestao1: 'Sugestão para neutralizar: A cada 4 gotas de laranja, 2 gotas de vermelho fundo rosado (resultado cicatrizado 90% rosado).',
         obs: 'A escolha da cor fica por conta do profissional. NÃO PROMETE VERMELHO na 1ª sessão sem clarear bem antes.',
         dica: 'DICA: A mistura deve conter obrigatoriamente laranja ou amarelo, vermelho e branco.'
       },
       {
         desejo: 'Escuro Intenso (Analogia: Blackout)',
+        img: 'assets/real_lips/escuro_intenso_sessoes.jpg',
         sugestao1: 'Lâmina bem rígida com alta concentração de melanina. NA PRIMEIRA SESSÃO É PROIBIDO APLICAR ROSA OU VERMELHO! A meta exclusiva é diminuir a intensidade do escuro.',
         sugestao2: 'Fórmula 1: Branco (CI 77891) + Laranja (CI 21110) meio a meio (1:1). Fórmula 2: Laranja + Rosa clarinho (1:1) para resultado pêssego.',
         paraPensar: 'O segredo é aumentar o contraste da cor do lábio neutralizado com a pele da cliente. Intervalo de retorno mínimo de 60 dias.'
@@ -457,7 +475,7 @@ function updateLipPreviews(lipType) {
 }
 
 /* ==========================================================================
-   ESCOLHENDO A COR NA PRÁTICA (GUIA COMPLETO DO E-BOOK)
+   ESCOLHENDO A COR NA PRÁTICA (GUIA COMPLETO DO E-BOOK COM FOTOS REAIS)
    ========================================================================== */
 function renderEscolhendoCorSheet() {
   const container = document.getElementById('escolhendo-cor-container');
@@ -472,17 +490,25 @@ function renderEscolhendoCorSheet() {
         </div>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.1rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.2rem;">
         ${section.casos.map(caso => `
-          <div class="clinical-subcard" style="background: rgba(12, 8, 9, 0.85);">
-            <div class="subcard-title" style="color: var(--gold-accent); font-size: 0.92rem;">
+          <div class="clinical-subcard" style="background: rgba(12, 8, 9, 0.85); display: flex; flex-direction: column;">
+            ${caso.img ? `
+              <div class="real-lip-frame">
+                <img src="${SecuritySanitizer.escapeHTML(caso.img)}" alt="${SecuritySanitizer.escapeHTML(caso.desejo)}" class="real-lip-img" loading="lazy" />
+                <div class="real-lip-badge">
+                  <i class="fa-solid fa-camera"></i> Foto Real de Bancada
+                </div>
+              </div>
+            ` : ''}
+            <div class="subcard-title" style="color: var(--gold-accent); font-size: 0.95rem; margin-bottom: 0.5rem;">
               <i class="fa-solid fa-bullseye"></i> ${SecuritySanitizer.escapeHTML(caso.desejo)}
             </div>
-            <div class="subcard-content">
-              ${caso.sugestao1 ? `<p style="margin-bottom: 0.3rem;"><strong>Recomendação:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao1)}</p>` : ''}
-              ${caso.sugestao2 ? `<p style="margin-bottom: 0.3rem;"><strong>Alternativa:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao2)}</p>` : ''}
-              ${caso.obs ? `<p style="font-size: 0.83rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><em>${SecuritySanitizer.escapeHTML(caso.obs)}</em></p>` : ''}
-              ${caso.dica ? `<p style="font-size: 0.83rem; color: var(--alert-green); margin-bottom: 0.3rem;"><strong>${SecuritySanitizer.escapeHTML(caso.dica)}</strong></p>` : ''}
+            <div class="subcard-content" style="flex: 1;">
+              ${caso.sugestao1 ? `<p style="margin-bottom: 0.35rem; font-size: 0.88rem;"><strong>Recomendação:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao1)}</p>` : ''}
+              ${caso.sugestao2 ? `<p style="margin-bottom: 0.35rem; font-size: 0.88rem;"><strong>Alternativa:</strong> ${SecuritySanitizer.escapeHTML(caso.sugestao2)}</p>` : ''}
+              ${caso.obs ? `<p style="font-size: 0.83rem; color: var(--text-secondary); margin-bottom: 0.35rem;"><em>${SecuritySanitizer.escapeHTML(caso.obs)}</em></p>` : ''}
+              ${caso.dica ? `<p style="font-size: 0.83rem; color: var(--alert-green); margin-bottom: 0.35rem;"><strong>${SecuritySanitizer.escapeHTML(caso.dica)}</strong></p>` : ''}
               ${caso.paraPensar ? `
                 <div style="background: rgba(229, 168, 158, 0.08); border-left: 3px solid var(--rose-gold); padding: 0.5rem 0.75rem; border-radius: 4px; margin-top: 0.5rem; font-size: 0.8rem; color: var(--rose-gold-light);">
                   ${SecuritySanitizer.escapeHTML(caso.paraPensar)}
@@ -497,7 +523,7 @@ function renderEscolhendoCorSheet() {
 }
 
 /* ==========================================================================
-   CLASSIFICAÇÃO DE LÁBIOS EM RELAÇÃO À COR & TEXTURA (GUIA VISUAL DO E-BOOK)
+   CLASSIFICAÇÃO DE LÁBIOS EM RELAÇÃO À COR & TEXTURA (GUIA VISUAL COM FOTOS REAIS)
    ========================================================================== */
 function renderLipClassificationSheet() {
   const container = document.getElementById('lip-classification-grid');
@@ -505,7 +531,15 @@ function renderLipClassificationSheet() {
 
   container.innerHTML = LIP_CLASSIFICATIONS_DATA.map(lip => `
     <div class="lip-class-card">
-      <div class="lip-class-header">
+      ${lip.realImg ? `
+        <div class="real-lip-frame" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; margin-bottom: 0; height: 180px;">
+          <img src="${SecuritySanitizer.escapeHTML(lip.realImg)}" alt="${SecuritySanitizer.escapeHTML(lip.titulo)}" class="real-lip-img" loading="lazy" />
+          <div class="real-lip-badge">
+            <i class="fa-solid fa-camera"></i> Caso Clínico Real
+          </div>
+        </div>
+      ` : ''}
+      <div class="lip-class-header" style="${lip.realImg ? 'padding-top: 0.85rem;' : ''}">
         <div class="lip-class-swatch-large" style="background: ${SecuritySanitizer.escapeHTML(lip.corHex)};"></div>
         <div>
           <h3 class="lip-class-title">${SecuritySanitizer.escapeHTML(lip.titulo)}</h3>
