@@ -1,0 +1,86 @@
+[
+  {
+    "id": "palido",
+    "titulo": "1. Lábio Pálido",
+    "subtitulo": "Sem pigmentação natural / Anêmico",
+    "corHex": "#F8C3BC",
+    "analogia": "Lâmina Transparente / Sem Melanina",
+    "estiramento": "Translúcido ao esticar",
+    "descricao": "Lábio muito claro, sem cor ou desbotado. Recebe bem qualquer tom de pigmento (rosa claro, rosa intenso, cor de boca ou vermelho).",
+    "dicaBancada": "Se a cliente quiser Rosa Claro: 8 gotas de Vermelho + 4 de Branco (ou 6 gotas de Vermelho + 6 de Rosa Seco/Pêssego). Quanto mais claro o pigmento, mais dióxido de titânio ele possui.",
+    "retorno_dias": 30,
+    "foto_referencia": "assets/real_lips/palido_rosa_claro.jpg"
+  },
+  {
+    "id": "rosado",
+    "titulo": "2. Lábio Rosado",
+    "subtitulo": "Vivacidade Natural / Saudável",
+    "corHex": "#E8837D",
+    "analogia": "Base Natural Equilibrada",
+    "estiramento": "Translúcido suave",
+    "descricao": "Possui boa cor rosada natural. A cliente deseja apenas intensificar o tom já existente ou transformar em um vermelho batom.",
+    "dicaBancada": "Para intensificar o rosa: usar vermelho de fundo rosado. Se utilizar o CI 12475 puro, aquecer obrigatoriamente com 1 gota de laranja neutralizador a cada 4 gotas de vermelho.",
+    "retorno_dias": 30,
+    "foto_referencia": "assets/real_lips/rosado_intensificar.jpg"
+  },
+  {
+    "id": "escuro_leve",
+    "titulo": "3. Lábio Escuro Leve",
+    "subtitulo": "Analogia da Cortina: Voal",
+    "corHex": "#B45F54",
+    "analogia": "Nuance levemente escura",
+    "estiramento": "Fina / Levemente vascularizada",
+    "descricao": "Possui apenas uma leve sombra escura ou acinzentada. Não exige neutralização pesada e não soma criticamente com a cor escolhida.",
+    "dicaBancada": "Acrescente 1 pitada de branco e 1 pitada de laranja neutralizador se a cor principal escolhida não contiver esses elementos no rótulo.",
+    "retorno_dias": 30,
+    "foto_referencia": "assets/real_lips/escuro_leve_voal.jpg"
+  },
+  {
+    "id": "escuro_medio",
+    "titulo": "4. Lábio Escuro Médio",
+    "subtitulo": "Analogia: Voal com Forro",
+    "corHex": "#7E3831",
+    "analogia": "Melanina Moderada",
+    "estiramento": "Lâmina Média",
+    "descricao": "Nítida necessidade de neutralização. Em 90% dos casos, o resultado cicatrizado da 1ª sessão será um rosado/pêssego saudável.",
+    "dicaBancada": "Mistura Obrigatória: 4 gotas de Laranja Neutralizador (CI 21110) + 2 gotas de Vermelho de Fundo Rosado (CI 12475). Não prometa vermelho puro na 1ª sessão.",
+    "retorno_dias": 45,
+    "foto_referencia": "assets/real_lips/escuro_medio_voal_forro.jpg"
+  },
+  {
+    "id": "escuro_fina",
+    "titulo": "5. Escuro Médio — Textura Fina",
+    "subtitulo": "Vascularização Dérmica",
+    "corHex": "#9A4B40",
+    "analogia": "Camada Dérmica Fina & Transparente",
+    "estiramento": "Extremamente Translúcido ao esticar",
+    "descricao": "Lábio escuro devido à altíssima vascularização em camada dérmica muito fina.",
+    "dicaBancada": "CUIDADO com excesso de Laranja puro! O laranja é uma cor hiper-refletiva em lâmina fina. Quebre sempre o reflexo do laranja misturando vermelho de fundo rosado.",
+    "retorno_dias": 45,
+    "foto_referencia": "assets/real_lips/escuro_medio_resultado.jpg"
+  },
+  {
+    "id": "manchado",
+    "titulo": "6. Lábio Manchado / Assimétrico",
+    "subtitulo": "Zonas Hiperpigmentadas",
+    "corHex": "#8C4A40",
+    "analogia": "Melanina Desigual",
+    "estiramento": "Variado",
+    "descricao": "Presença de manchas escuras isoladas no bordo ou no centro labial, intercaladas com áreas mais pálidas.",
+    "dicaBancada": "Aplique neutralização pontual localizada (Laranja + Branco 1:1) EXCLUSIVAMENTE sobre as áreas escuras manchadas antes de uniformizar todo o lábio.",
+    "retorno_dias": 45,
+    "foto_referencia": "assets/real_lips/levemente_escurecido_resultado.jpg"
+  },
+  {
+    "id": "escuro_intenso",
+    "titulo": "7. Lábio Escuro Intenso",
+    "subtitulo": "Analogia: Cortina Blackout",
+    "corHex": "#421C18",
+    "analogia": "Lâmina Rígida / Alta Melanina",
+    "estiramento": "Rígido, espesso e não fica transparente",
+    "descricao": "Lâmina labial espessa e rígida com alta concentração de melanócitos. Exige obrigatoriamente no mínimo 2 sessões para clareamento.",
+    "dicaBancada": "PROIBIDO aplicar tom rosa ou vermelho na 1ª sessão! A meta exclusiva é diminuir a densidade do escuro. Misturar Branco (CI 77891) + Laranja Neutralizador (CI 21110) [1:1]. Intervalo mínimo de 60 dias.",
+    "retorno_dias": 60,
+    "foto_referencia": "assets/real_lips/escuro_intenso_blackout.jpg"
+  }
+]

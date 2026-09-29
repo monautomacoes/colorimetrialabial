@@ -1,0 +1,838 @@
+{
+  "metadados_sistema": {
+    "nome_aplicativo": "Dani Pontello — Guia Oficial de Bancada & Colorimetria Labial",
+    "autora_metodo": "Dani Pontello",
+    "titulacao": "Especialista e Referência Internacional em Micropigmentação Labial",
+    "versao": "5.0.0-PRO-CLINICAL",
+    "frase_mestra": "A agulha a gente descarta, o aparelho fica em nosso espaço, mas a tinta vai na pele da cliente.",
+    "instagram": "https://www.instagram.com/danisilvapontello",
+    "instagram_handle": "@danisilvapontello"
+  },
+  "fundamentos_quimicos_e_pigmentologia": {
+    "quimica_dos_pigmentos": {
+      "definicao": "Matéria química formada por um conjunto de moléculas específicas de elementos químicos.",
+      "organicos": {
+        "constituicao": "Possuem carbono e hidrogênio em sua estrutura molecular, similar à química tecidual do corpo humano.",
+        "faixa_ci": "10.000 a 76.999",
+        "durabilidade": "Maior durabilidade e vivacidade cromática devido à compatibilidade estrutural e menor peso molecular.",
+        "fabricacao": "Produzidos via síntese química laboratorial com enorme variedade de nuances radiantes."
+      },
+      "inorganicos": {
+        "constituicao": "Derivados de óxidos de metais (óxido de ferro e dióxido de titânio).",
+        "faixa_ci": "77.000 a 77.999",
+        "durabilidade": "Menor fixação prolongada nos lábios; não possuem carbono e tendem a desbotar com aspecto opaco/pastel.",
+        "cores_geradas_oxido_ferroso": [
+          "Preto (77499)",
+          "Vermelho (77491)",
+          "Amarelo (77492)",
+          "Branco (77891)"
+        ]
+      }
+    },
+    "componentes_do_frasco": {
+      "pigmento": "Matéria-prima em pó pulverizado que confere a cor primária ou secundária.",
+      "molhantes": [
+        {
+          "nome": "Propileno Glicol USP",
+          "caracteristicas": "Atóxico, incolor, inodoro, excelente solubilizador de pigmentos orgânicos e miscível em água."
+        },
+        {
+          "nome": "Glicerina Vegetal USP",
+          "caracteristicas": "Composto orgânico umectante, viscoso, que evita a secagem rápida no batoque durante o procedimento."
+        }
+      ],
+      "conservante": {
+        "nome": "Álcool Isopropílico (Isopropanol)",
+        "funcao": "Garante a esterilidade do frasco e cria barreira contra proliferação bacteriana após aberto. Determina a validade de bancada."
+      },
+      "diluente": {
+        "composicao": "Água destilada, deionizada ou desmineralizada. Quanto mais fluida a fórmula, maior o percentual de água pura."
+      }
+    },
+    "granulometria_e_peso_de_mao": {
+      "aleatoria": {
+        "descricao": "Partículas de tamanhos variados e formas irregulares sem padronização.",
+        "comportamento": "Desfavorável para profissionais com mão leve. A cor demora a revelar e apresenta desbotamento irregular. Em sobrancelhas gera cinza/chumbo.",
+        "adaptacao": "Exige técnica de implantação mais firme ou múltiplas passadas."
+      },
+      "micronizada": {
+        "descricao": "Partículas minúsculas, homogêneas e esféricas de tamanho regular.",
+        "comportamento": "Facilita a implantação imediata com trauma mínimo. A cor revela na 1ª passada com cicatrização fiel e uniforme.",
+        "adaptacao": "Ideal para mão leve e precisa. Granulometria de escolha da especialista Dani Pontello."
+      },
+      "polimerizada": {
+        "descricao": "Partículas micronizadas revestidas por uma cápsula de polímero protetor.",
+        "comportamento": "Altíssima durabilidade tecidual e degradação mínima de cor ao longo dos anos. Exige domínio técnico para não saturar demais.",
+        "regra_de_ouro_diluente": "Água pura NÃO altera sua estrutura (mantém-se polimerizada). Exige diluente de fábrica que contenha o ácido específico capaz de romper a cápsula polimérica, reduzindo a carga pigmentária com segurança."
+      }
+    },
+    "testes_praticos_de_bancada": {
+      "teste_de_granulometria": {
+        "procedimento": "Em um recipiente raso, misture 100 ml de água limpa com 3 a 5 gotas de detergente enzimático. Pingue 1 gota do pigmento e aguarde 1 hora.",
+        "diagnostico": "Se os pigmentos se separarem em anéis coloridos diferentes, a granulação é aleatória. Se a solução permanecer homogênea, é micronizada ou polimerizada."
+      },
+      "teste_de_degradacao_fiel": {
+        "procedimento": "Umedeça a ponta de um cotonete com água limpa, pingue 1 gota do frasco e espalhe levemente no papel de degradação.",
+        "motivo": "A umidade simula o fluido tissular da pele, revelando o tom degradado cicatrizado real do frasco."
+      }
+    }
+  },
+  "regras_fisiologicas_e_intercorrencias": {
+    "regra_da_soma_cromatica": "A cor natural do lábio SEMPRE se soma ao pigmento implantado. Em lábios escuros/melanínicos, aplicar cor fria ou vermelho puro resulta em tom beterraba ou escurecimento pós-procedimento.",
+    "teste_do_estiramento_e_textura": {
+      "metodo": "Estique a lâmina labial com dois dedos para avaliar vascularização e densidade tecidual.",
+      "lamina_fina_translucida": {
+        "caracteristica": "Fica translúcida e rosada ao esticar. Lâmina dérmica fina e altamente vascularizada.",
+        "comportamento": "Reflete a cor aplicada com extrema rapidez e fidelidade. Requer cuidado com saturação para não ficar excessivo.",
+        "alerta_escuro_vascular": "Se houver tom escuro por alta vascularização em lâmina fina, CUIDADO com laranja puro (cor hiper-refletiva). Suave sempre o reflexo do laranja misturando vermelho de fundo rosado.",
+        "parametro_agulha": "Agulha 1RL 0.25mm Taper Longo. Velocidade 6.0V a 6.5V. Movimento de varredura leve."
+      },
+      "lamina_rigida_opaca": {
+        "caracteristica": "Não fica transparente ao ser esticada. Lâmina densa, espessa e com alta carga de melanina.",
+        "comportamento": "Exige pigmentos de maior refletividade cromática (laranja/amarelo) e maior carga de dióxido de titânio (branco) para opacificar a melanina.",
+        "parametro_agulha": "Agulha 1RL 0.30mm ou 3RL. Velocidade 7.0V. Movimento de pixel em alta frequência sem força de mão."
+      }
+    },
+    "intercorrencias_clinicas": {
+      "escurecimento_rebote_pos_inflamatorio": {
+        "causa": "Ocorre em lábios melanínicos devido à hiperativação dos melanócitos pelo trauma mecânico excessivo ou calor da agulha.",
+        "conduta": "Tranquilizar a cliente. O quadro normaliza progressivamente no ciclo de renovação celular de 60 dias. Reduzir o número de passadas no retoque."
+      },
+      "manchas_brancas_aspecto_vitiligo": {
+        "causa": "NÃO É NORMAL. Causado por lesão mecânica profunda ou uso indevido de anestésico com epinefrina/adrenalina em pele aberta, gerando necrose e isquemia grave.",
+        "prevencao": "Usar anestésico tópico apenas em pele íntegra. Em pele aberta, usar apenas produtos sem vasoconstritores agressivos."
+      }
+    }
+  },
+  "tabela_referencia_ci": [
+    {
+      "cor": "Dióxido de Titânio (Branco)",
+      "ci": [
+        "77891"
+      ],
+      "tipo": "Inorgânico",
+      "funcao": "Clarear, opacificar e neutralizar manchas escuras por contraste."
+    },
+    {
+      "cor": "Amarelo Orgânico",
+      "ci": [
+        "11741",
+        "19140",
+        "21095"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Luz de dentro para fora, iluminador e aquecedor de nuances."
+    },
+    {
+      "cor": "Amarelo Inorgânico",
+      "ci": [
+        "77492"
+      ],
+      "tipo": "Inorgânico",
+      "funcao": "Ajuste terroso e opacidade em lábios finos."
+    },
+    {
+      "cor": "Laranja Neutralizador",
+      "ci": [
+        "21110",
+        "21160"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Neutralizador primário para escuro melanínico e aquecedor obrigatório para CI 12475."
+    },
+    {
+      "cor": "Vermelho Orgânico Frio",
+      "ci": [
+        "12475",
+        "12477"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Tonalidade magenta/rosada. Se usado puro em lábio frio, cicatriza rosa envelhecido/chumbo. EXIGE AQUECIMENTO com CI 21110."
+    },
+    {
+      "cor": "Vermelho Orgânico Quente",
+      "ci": [
+        "56110",
+        "15850"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Vermelho vivo batom com excelente fixação."
+    },
+    {
+      "cor": "Óxido de Ferro Vermelho",
+      "ci": [
+        "77491"
+      ],
+      "tipo": "Inorgânico",
+      "funcao": "Coloração avermelhada terrosa inorgânica."
+    },
+    {
+      "cor": "Magenta Quinacridona",
+      "ci": [
+        "73915"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Intensificador de rosa e efeito efeito pitanga/chiclete."
+    },
+    {
+      "cor": "Carbon Black",
+      "ci": [
+        "77266"
+      ],
+      "tipo": "Orgânico",
+      "funcao": "Preto orgânico (nunca usar puro em lábios)."
+    },
+    {
+      "cor": "Óxido de Ferro Preto",
+      "ci": [
+        "77499"
+      ],
+      "tipo": "Inorgânico",
+      "funcao": "Escurecedor terroso inorgânico."
+    }
+  ],
+  "roteiro_anamnese_bancada": [
+    {
+      "etapa": 1,
+      "pergunta": "Qual sua expectativa real com o procedimento? (Efeito Batom Marcado ou Efeito Revitalização/Nude Natural?)"
+    },
+    {
+      "etapa": 2,
+      "pergunta": "Existe algum tom assimétrico ou manchado no seu lábio que te incomoda?"
+    },
+    {
+      "etapa": 3,
+      "pergunta": "Você costuma usar batom no dia a dia? Se sim, de qual tonalidade?"
+    },
+    {
+      "etapa": 4,
+      "pergunta": "Prefere o resultado puxado para o Rosado ou para o Avermelhado/Pêssego?"
+    },
+    {
+      "etapa": 5,
+      "pergunta": "Tem histórico de herpes labial simples? (Orientar profilaxia prévia com antiviral se necessário)."
+    },
+    {
+      "regra_exibicao": "Apresente sempre fotos cicatrizadas de 60 dias da especialista Dani Pontello para alinhar a expectativa da cliente com a fisiologia tecidual real."
+    }
+  ],
+  "protocolos_de_formulacao_e_misturas": [
+    {
+      "id": "PALIDO_ROSA_CLARO",
+      "tipo_labio": "pálido",
+      "desejo_cliente": "rosa claro",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Fórmula Padrão (Efeito Nude)",
+          "receita": "8 gotas de Vermelho Rosado (CI 12475) + 4 gotas de Branco Dióxido (CI 77891)."
+        },
+        {
+          "opcao": "Fórmula Pêssego Suave",
+          "receita": "6 gotas de Vermelho Rosado + 6 gotas de Rosa Seco ou Pêssego com Dióxido."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.25mm Taper Longo",
+        "velocidade": "6.0V a 6.5V",
+        "passadas": "2 a 3 passadas rápidas em pêndulo",
+        "angulo": "90° perpendicular à pele",
+        "profundidade": "0.2mm (derme papilar superficial)"
+      },
+      "regra_para_pensar": "Quanto mais claro o tom desejado, maior a proporção de Dióxido de Titânio (CI 77891) necessária para dar opacidade e reflexo luminoso.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "PALIDO_ROSA_INTENSO",
+      "tipo_labio": "pálido",
+      "desejo_cliente": "rosa intenso",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Fórmula Vibrante Dani Pontello",
+          "receita": "5 gotas de Vermelho de Fundo Rosado (CI 12475) + 2 gotas de Laranja Neutralizador (CI 21110) para aquecer."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.25mm ou 0.30mm",
+        "velocidade": "6.5V",
+        "passadas": "3 passadas uniformes em pixel",
+        "angulo": "90°",
+        "profundidade": "0.25mm"
+      },
+      "regra_para_pensar": "Se a cor rosada contiver o CI 12475 sem o CI 21110 pré-misturado, é OBRIGATÓRIO acrescentar 1 gota de Laranja a cada 4 gotas de Vermelho para não cicatrizar rosa envelhecido.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "PALIDO_MEIO_TERMO_COR_DE_BOCA",
+      "tipo_labio": "pálido",
+      "desejo_cliente": "meio termo (cor de boca)",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Cor de Boca Marcado",
+          "receita": "4 gotas de Vermelho Rosado + 4 gotas de Vermelho Quente (1:1)."
+        },
+        {
+          "opcao": "Cor de Boca Nude Suave",
+          "receita": "4 gotas de Vermelho Quente + 4 gotas de Rosa Seco com Dióxido (1:1)."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm",
+        "velocidade": "6.2V",
+        "passadas": "2 passadas de contorno invisível + preenchimento",
+        "angulo": "75° a 90°",
+        "profundidade": "0.2mm"
+      },
+      "indicacao_perfil": "Ideal para clientes indecisas que buscam revitalização sem parecer batom marcado.",
+      "regra_para_pensar": "O dióxido confere aspecto aveludado/nude opaco. Para transparência e efeito gloss, elimine o branco da fórmula.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "PALIDO_VERMELHO",
+      "tipo_labio": "pálido",
+      "desejo_cliente": "vermelho",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Vermelho Batom Clássico",
+          "receita": "8 gotas de Vermelho Quente puro (CI 56110 ou 15850)."
+        },
+        {
+          "opcao": "Ajuste de Reflexo",
+          "receita": "Se o vermelho for muito alaranjado, adicione 2 gotas de Vermelho Rosado para quebrar o excesso de alaranjado."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm ou 3RL",
+        "velocidade": "6.8V",
+        "passadas": "3 a 4 passadas cruzadas com saturação gradual",
+        "angulo": "90°",
+        "profundidade": "0.25mm"
+      },
+      "dica_bancada": "Faça um traço de teste de degradação com cotonete molhado na ficha para confirmar o tom degradado na pele da cliente antes de iniciar.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "ROSADO_INTENSIFICAR_ROSA",
+      "tipo_labio": "rosado",
+      "desejo_cliente": "intensificar o rosa já existente",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Fórmula Intensificadora",
+          "receita": "6 gotas de Vermelho Rosado + 1.5 gotas de Laranja com Dióxido para estabilização cromática."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.25mm",
+        "velocidade": "6.0V",
+        "passadas": "2 passadas leves",
+        "angulo": "90°",
+        "profundidade": "0.2mm"
+      },
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "ROSADO_VERMELHO",
+      "tipo_labio": "rosado",
+      "desejo_cliente": "vermelho",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Efeito Carmim",
+          "receita": "8 gotas de Vermelho Puro da família de degradação avermelhada."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm",
+        "velocidade": "6.5V",
+        "passadas": "3 passadas",
+        "angulo": "90°",
+        "profundidade": "0.25mm"
+      },
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "MASCULINO_AVERMELHADO",
+      "tipo_labio": "masculino",
+      "desejo_cliente": "avermelhado natural",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Revitalização Masculina",
+          "receita": "6 gotas de Vermelho Quente + 2 gotas de Laranja Neutralizador (sem marcar bordo labial)."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.25mm ou 3RL em pontilhismo",
+        "velocidade": "5.8V",
+        "passadas": "2 passadas de varredura sem traçar linha de contorno",
+        "angulo": "60° a 90°",
+        "profundidade": "0.18mm"
+      },
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "MASCULINO_NEUTRALIZACAO_MEDIA",
+      "tipo_labio": "masculino",
+      "desejo_cliente": "neutralização grau médio",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Fórmula Masculina de Clareamento",
+          "receita": "6 gotas de Laranja Neutralizador + 2 gotas de Vermelho Rosado."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm em efeito pixel disperso",
+        "velocidade": "6.2V",
+        "passadas": "2 passadas suaves sem definição de contorno",
+        "angulo": "90°",
+        "profundidade": "0.2mm"
+      },
+      "dica_bancada": "Em lábios masculinos, NUNCA marque o contorno exterior. Trabalhe exclusivamente do centro para dentro em movimentos dispersos.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "ESCURO_LEVE",
+      "tipo_labio": "escuro leve (analogia: voal)",
+      "desejo_cliente": "clarear e colorir",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Alvo Rosa Claro",
+          "receita": "6 gotas de Vermelho Rosado + 3 gotas de Branco + 2 gotas de Laranja Aquecedor."
+        },
+        {
+          "opcao": "Alvo Rosa Intenso",
+          "receita": "6 gotas de Vermelho Rosado + 2 gotas de Laranja Neutralizador."
+        },
+        {
+          "opcao": "Alvo Vermelho",
+          "receita": "6 gotas de Vermelho Quente + 2 gotas de Rosa Seco com Dióxido."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.25mm Taper Longo",
+        "velocidade": "6.5V",
+        "passadas": "3 passadas de pixel regular",
+        "angulo": "90°",
+        "profundidade": "0.22mm"
+      },
+      "regra_para_pensar": "O fundo castanho/arroxeado leve vai somar com o pigmento. Acrescente sempre 1 pitada de Laranja e Dióxido se o frasco escolhido não possuir esses CIs.",
+      "intervalo_retorno_dias": 30
+    },
+    {
+      "id": "ESCURO_MEDIO",
+      "tipo_labio": "escuro médio (analogia: voal com forro)",
+      "desejo_cliente": "neutralização",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Neutralização Rosada Média",
+          "receita": "6 gotas de Laranja Neutralizador (CI 21110) + 3 gotas de Vermelho Rosado (CI 12475)."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm ou 3RL",
+        "velocidade": "6.8V",
+        "passadas": "3 passadas uniforme sem exercer pressão de mão",
+        "angulo": "90°",
+        "profundidade": "0.25mm"
+      },
+      "regras_criticas": [
+        "A escolha da cor cabe exclusivamente à profissional com base na física das cores; a cliente não escolhe cor alvo nesta fase inicial.",
+        "Em 90% dos casos o resultado cicatrizado de 1ª sessão será um rosado/pêssego saudável.",
+        "NÃO PROMETA VERMELHO para lábios melanínicos sem antes clarear a base em sessões prévias.",
+        "A mistura deve conter obrigatoriamente: Laranja (CI 21110), Vermelho Rosado e uma fração de Dióxido de Titânio.",
+        "INTERVALO DE RETORNO: 45 dias corridos."
+      ],
+      "intervalo_retorno_dias": 45
+    },
+    {
+      "id": "ESCURO_INTENSO",
+      "tipo_labio": "escuro intenso (analogia: blackout)",
+      "desejo_cliente": "neutralização obrigatória de 1ª sessão",
+      "sugestoes_gotas": [
+        {
+          "opcao": "Fórmula Clareadora Suprema Dani Pontello",
+          "receita": "6 gotas de Branco Dióxido (CI 77891) + 6 gotas de Laranja Neutralizador (CI 21110) [Proporção 1:1]."
+        },
+        {
+          "opcao": "Fórmula Pêssego Clareador",
+          "receita": "6 gotas de Laranja + 6 gotas de Rosa Claro com alta carga de Dióxido."
+        }
+      ],
+      "parametros_tecnicos": {
+        "agulha": "1RL 0.30mm ou 0.35mm em efeito pixel cirúrgico",
+        "velocidade": "7.0V",
+        "passadas": "Máximo 3 passadas rápidas sem agredir o tecido",
+        "angulo": "90° rígido",
+        "profundidade": "0.25mm"
+      },
+      "regras_criticas": [
+        "Lâmina labial espessa e rígida com alta concentração de melanócitos ativáveis.",
+        "NA PRIMEIRA SESSÃO É PROIBIDO aplicar pigmento com objetivo de deixar rosa ou vermelho; a meta EXCLUSIVA é diminuir a densidade do tom escuro.",
+        "Não execute procedimento focado na foto de pós-imediato. O foco absoluto é a cicatrização de 60 dias.",
+        "A alta carga de Dióxido de Titânio (branco) reduz expressivamente a quantidade de sessões necessárias, opacificando a melanina profunda.",
+        "INTERVALO MÍNIMO OBRIGATÓRIO: 60 dias corridos para evitar escurecimento rebote inflamatório."
+      ],
+      "intervalo_retorno_dias": 60
+    }
+  ],
+  "catalogo_completo_de_pigmentos": {
+    "laranjas_e_pessegos_neutralizadores": [
+      {
+        "marca": "Easy Glow",
+        "nome": "Sunshine Orange",
+        "ci": "21110 | 77891 | 12475 | 11741",
+        "favorito_autora": true,
+        "cor_hex": "#FF7700"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Hot",
+        "ci": "21110 | 77891 | 12475",
+        "favorito_autora": false,
+        "cor_hex": "#FF6600"
+      },
+      {
+        "marca": "Kirey",
+        "nome": "Mikan",
+        "ci": "77891 | 15850 | 19140",
+        "favorito_autora": false,
+        "cor_hex": "#FF8833"
+      },
+      {
+        "marca": "Mag Color",
+        "nome": "Coral",
+        "ci": "15850 | 19140 | 77891",
+        "favorito_autora": false,
+        "cor_hex": "#F07050"
+      },
+      {
+        "marca": "Electric Ink",
+        "nome": "Chiclete",
+        "ci": "77891 | 21110 | 12475",
+        "favorito_autora": false,
+        "cor_hex": "#FF9966"
+      },
+      {
+        "marca": "World Famous",
+        "nome": "Bora Bora",
+        "ci": "77891 | 21110 | 12475",
+        "favorito_autora": false,
+        "cor_hex": "#E06655"
+      },
+      {
+        "marca": "Easy Glow",
+        "nome": "Bubblegum",
+        "ci": "77891 | 21110 | 12475",
+        "favorito_autora": false,
+        "cor_hex": "#F5A08A"
+      },
+      {
+        "marca": "Nuance",
+        "nome": "Orange",
+        "ci": "77891 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#FF7722"
+      },
+      {
+        "marca": "Gama",
+        "nome": "Neutralize",
+        "ci": "21110 | 77891",
+        "favorito_autora": false,
+        "cor_hex": "#FF6A00"
+      },
+      {
+        "marca": "Alice Cosmetic",
+        "nome": "Orange",
+        "ci": "21110 | 77891",
+        "favorito_autora": false,
+        "cor_hex": "#FF7000"
+      }
+    ],
+    "vermelhos_fundo_rosado": [
+      {
+        "marca": "Eternal Ink",
+        "nome": "Lipistik Red",
+        "ci": "12475",
+        "favorito_autora": true,
+        "observacao": "CI 12475 puro é frio. Exige aquecimento obrigatório com CI 21110.",
+        "cor_hex": "#D83A56"
+      },
+      {
+        "marca": "Menela",
+        "nome": "Miss Cherrei",
+        "ci": "12475",
+        "favorito_autora": false,
+        "observacao": "Frio, exige aquecimento.",
+        "cor_hex": "#E04060"
+      },
+      {
+        "marca": "Natural Pigmentos (Nup)",
+        "nome": "Amaryllis",
+        "ci": "12475",
+        "favorito_autora": false,
+        "observacao": "Frio, exige aquecimento.",
+        "cor_hex": "#D03550"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Red Sand",
+        "ci": "12475",
+        "favorito_autora": false,
+        "observacao": "Frio, exige aquecimento.",
+        "cor_hex": "#C83045"
+      },
+      {
+        "marca": "Nuance",
+        "nome": "Granada",
+        "ci": "12475",
+        "favorito_autora": false,
+        "observacao": "Frio, exige aquecimento.",
+        "cor_hex": "#D84055"
+      },
+      {
+        "marca": "Kirey",
+        "nome": "Suika (Vermelho Rosado)",
+        "ci": "15850 | 77891",
+        "favorito_autora": false,
+        "observacao": "Possui dióxido de titânio.",
+        "cor_hex": "#E85070"
+      },
+      {
+        "marca": "Mag Color",
+        "nome": "Vermelho",
+        "ci": "15850 | 77499 | 19140",
+        "favorito_autora": false,
+        "observacao": "Contém amarelo e preto inorgânico.",
+        "cor_hex": "#C02535"
+      },
+      {
+        "marca": "Easy Glow",
+        "nome": "Red (Tattoo)",
+        "ci": "21110 | 12475",
+        "favorito_autora": false,
+        "observacao": "Já vem pré-aquecido com CI 21110.",
+        "cor_hex": "#E03848"
+      },
+      {
+        "marca": "Gama",
+        "nome": "Blush / Brush",
+        "ci": "12475",
+        "favorito_autora": false,
+        "observacao": "Frio, exige aquecimento.",
+        "cor_hex": "#B53040"
+      }
+    ],
+    "vermelhos_fundo_vermelho": [
+      {
+        "marca": "Easy Glow",
+        "nome": "Reddish",
+        "ci": "21110 | 12475 | 11741",
+        "favorito_autora": true,
+        "cor_hex": "#E62A2A"
+      },
+      {
+        "marca": "Eternal Ink",
+        "nome": "Light Red",
+        "ci": "56110",
+        "favorito_autora": false,
+        "cor_hex": "#ED3232"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Red Life",
+        "ci": "73915 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#D11A1A"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Insano",
+        "ci": "12475 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#DF2020"
+      },
+      {
+        "marca": "Kirey",
+        "nome": "Itigô",
+        "ci": "77492 | 15850 | 77491",
+        "favorito_autora": false,
+        "cor_hex": "#D82828"
+      },
+      {
+        "marca": "Mag Color",
+        "nome": "Pitanga",
+        "ci": "15850 | 19140 | 77492",
+        "favorito_autora": false,
+        "cor_hex": "#E03020"
+      },
+      {
+        "marca": "Mag Color",
+        "nome": "Piment",
+        "ci": "15850 | 77499 | 77491 | 77492",
+        "favorito_autora": false,
+        "cor_hex": "#A81515"
+      },
+      {
+        "marca": "Electric Ink",
+        "nome": "Vermelho Vivo",
+        "ci": "73915 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#E61C1C"
+      }
+    ],
+    "rosas": [
+      {
+        "marca": "RBKollors",
+        "nome": "Darling",
+        "ci": "77891 | 12475 | 73915",
+        "favorito_autora": false,
+        "cor_hex": "#F08098"
+      },
+      {
+        "marca": "Mag Color",
+        "nome": "Pink Mag",
+        "ci": "77499 | 77891 | 15850",
+        "favorito_autora": false,
+        "cor_hex": "#EE758C"
+      },
+      {
+        "marca": "Electric Ink",
+        "nome": "Pink",
+        "ci": "12475 | 77891 | 73915",
+        "favorito_autora": false,
+        "cor_hex": "#F27892"
+      },
+      {
+        "marca": "Natural Pigmentos (Nup)",
+        "nome": "Sweet",
+        "ci": "77891 | 12475 | 73915",
+        "favorito_autora": false,
+        "cor_hex": "#F58BA0"
+      },
+      {
+        "marca": "Eternal Ink",
+        "nome": "Hot Pink",
+        "ci": "12475 | 77891",
+        "favorito_autora": true,
+        "cor_hex": "#E85078"
+      }
+    ],
+    "brancos_e_alta_carga_de_dioxido": [
+      {
+        "marca": "Easy Glow",
+        "nome": "Bubblegum",
+        "ci": "77891 | 21110 | 12475",
+        "favorito_autora": true,
+        "cor_hex": "#F5C2B5"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Penélope",
+        "ci": "77891 | 12475 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#F8C8BD"
+      },
+      {
+        "marca": "Kirey",
+        "nome": "Sakura",
+        "ci": "77891 | 15850 | 19140",
+        "favorito_autora": false,
+        "cor_hex": "#FAD0C4"
+      },
+      {
+        "marca": "Electric Ink",
+        "nome": "Rosa Seco",
+        "ci": "77891 | 12475 | 21110",
+        "favorito_autora": false,
+        "cor_hex": "#EEA99A"
+      },
+      {
+        "marca": "Nuance",
+        "nome": "Cindy",
+        "ci": "21110 | 73915 | 11741 | 77891",
+        "favorito_autora": false,
+        "cor_hex": "#F2B2A2"
+      },
+      {
+        "marca": "Easy Glow",
+        "nome": "Amarelo Canário",
+        "ci": "11741 | 77891",
+        "favorito_autora": false,
+        "cor_hex": "#FBEA55"
+      },
+      {
+        "marca": "RBKollors",
+        "nome": "Full Lips",
+        "ci": "77891 | 11741 | 12475",
+        "favorito_autora": false,
+        "cor_hex": "#FCE3D8"
+      },
+      {
+        "marca": "Easy Glow",
+        "nome": "Ghost White",
+        "ci": "77891",
+        "favorito_autora": false,
+        "cor_hex": "#FFFFFF"
+      }
+    ]
+  },
+  "tabela_substituicao_direta": [
+    {
+      "categoria": "LARANJAS NEUTRALIZADORES",
+      "pigmento_favorito": "Sunshine Orange (Easy Glow)",
+      "opcoes_substituicao": [
+        "Mikan (Kirey)",
+        "Orange (Alice Cosmetic)",
+        "Hot (RBKollors)",
+        "Neutralize (Gama)",
+        "Orange (Nuance)",
+        "Bora Bora (World Famous)"
+      ]
+    },
+    {
+      "categoria": "VERMELHOS ROSADOS (FRIOS)",
+      "pigmento_favorito": "Lipistik Red (Eternal Ink)",
+      "opcoes_substituicao": [
+        "Big Apple (World Famous)",
+        "Red Sand (RBKollors)",
+        "Miss Cherry (Menela)",
+        "Vermelho (Electric Ink)",
+        "Suika (Kirey)",
+        "Red (Easy Glow)",
+        "Granada (Nuance)",
+        "Brush / Blush (Gama)",
+        "Amaryllis (Natural Pigmentos)"
+      ]
+    },
+    {
+      "categoria": "DIÓXIDO DE TITÂNIO / CLAREADORES",
+      "pigmento_favorito": "Bubblegum (Easy Glow)",
+      "opcoes_substituicao": [
+        "Penélope (RBKollors)",
+        "Rosa Seco (Electric Ink)",
+        "Magnólia (Nuance)",
+        "Ghost White (Easy Glow)",
+        "Full Lips (RBKollors)",
+        "Sakura (Kirey)"
+      ]
+    },
+    {
+      "categoria": "VERMELHOS QUENTES (BATOM)",
+      "pigmento_favorito": "Reddish (Easy Glow)",
+      "opcoes_substituicao": [
+        "Tangerine (Eternal Ink)",
+        "Pitanga (Mag Color)",
+        "Itigô (Kirey)",
+        "Lite Cherry (Natural Pigmentos)",
+        "Red Hot (World Famous)",
+        "Red Life (RBKollors)",
+        "Vermelho Vivo (Electric Ink)",
+        "Caliente (Dermi Ink)"
+      ]
+    },
+    {
+      "categoria": "ROSAS VIBRANTES",
+      "pigmento_favorito": "Hot Pink (Eternal Ink)",
+      "opcoes_substituicao": [
+        "Mistura de Bancada: 4 gotas de Vermelho Rosado (CI 12475) + 2 gotas de Branco (CI 77891) + 1 gota de Laranja (CI 21110)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "categoria": "LÁBIO PÁLIDO",
+    "swatch": "#F8C3BC",
+    "casos": [
+      {
+        "desejo": "Se a cliente quer Rosa Claro",
+        "foto": "assets/real_lips/palido_rosa_claro.jpg",
+        "sugestao1": "Sugestão 1: Usar qualquer um da família dos rosas puro.",
+        "sugestao2": "Sugestão 2: Mistura de vermelho com branco na proporção de 8 gotas de vermelho para 4 gotas de branco.",
+        "obs": "Observação: Não precisa ser necessariamente branco; pode usar rosa seco ou pêssego (ex: 6 gotas de vermelho + 6 gotas de rosa seco/pêssego).",
+        "paraPensar": "PARA PENSAR: Quanto mais claro o pigmento, mais branco ele tem, por isso pode ser usado para clarear outras cores."
+      },
+      {
+        "desejo": "Se a cliente quer Rosa Intenso",
+        "foto": "assets/real_lips/palido_rosa_intenso.jpg",
+        "sugestao1": "Sugestão: Usar qualquer vermelho do grupo dos vermelhos de fundo rosado.",
+        "paraPensar": "PARA PENSAR: Se a cor não tiver CI 21110 na composição e tiver somente o CI 12475, aquecer obrigatoriamente para cicatrizar bonito. O 12475 é um CI frio; sem aquecer cicatriza rosa envelhecido. Proporção: 1 gota de laranja a cada 4 gotas de vermelho."
+      },
+      {
+        "desejo": "Meio Termo (Cor de Boca Nude)",
+        "foto": "assets/real_lips/palido_cor_boca.jpg",
+        "sugestao1": "Sugestão 1 (Mais Intenso): Misturar vermelho de fundo rosado + vermelho de fundo avermelhado (meio a meio / 1:1).",
+        "sugestao2": "Sugestão 2 (Mais Claro): Misturar vermelho de fundo avermelhado + rosa (meio a meio / 1:1).",
+        "obs": "Observação: Indicado para clientes indecisas que não querem nem rosa puro nem vermelho batom.",
+        "paraPensar": "PARA PENSAR: O branco deixa a cor mais opaca. Quando desejar resultado mais nude e opaco, acrescente branco na mistura."
+      },
+      {
+        "desejo": "Se a cliente quiser Vermelho Batom",
+        "foto": "assets/real_lips/palido_vermelho.jpg",
+        "sugestao1": "Sugestão: Usar vermelho do grupo avermelhado puro.",
+        "dica": "DICA DE BANCADA: Se o pigmento tiver o fundo muito alaranjado, misture vermelho de fundo rosado para quebrar o reflexo e teste no cotonete molhado.",
+        "paraPensar": "PARA PENSAR: Para efeito de batom, saturar mais na implantação usando técnica ideal para diminuir o processo inflamatório."
+      }
+    ]
+  },
+  {
+    "categoria": "LÁBIO ROSADO",
+    "swatch": "#E8837D",
+    "casos": [
+      {
+        "desejo": "Se a cliente quiser Intensificar o Rosa Existente",
+        "foto": "assets/real_lips/rosado_intensificar.jpg",
+        "sugestao1": "Sugestão: Usar qualquer pigmento vermelho do grupo dos vermelhos de fundo rosado.",
+        "obs": "Lembrando: se usar puro o CI 12475 vai ficar frio. Indico aquecer com laranja que tenha branco na composição (1 gota de laranja para cada 4 gotas de vermelho)."
+      },
+      {
+        "desejo": "Se a cliente quer Vermelho Batom",
+        "foto": "assets/real_lips/rosado_vermelho.jpg",
+        "sugestao1": "Sugestão: Usar vermelho do grupo de degradação vermelho puro."
+      }
+    ]
+  },
+  {
+    "categoria": "LÁBIO MASCULINO",
+    "swatch": "#C47B62",
+    "casos": [
+      {
+        "desejo": "Se o cliente quiser Avermelhado Natural",
+        "foto": "assets/real_lips/masculino_avermelhado.jpg",
+        "sugestao1": "Sugestão: Usar pigmento vermelho de tom avermelhado. Se for levemente escuro, acrescente na mistura laranja e branco (1 gota de laranja com branco a cada 4 gotas de cor)."
+      },
+      {
+        "desejo": "Neutralização Grau Médio Masculina",
+        "foto": "assets/real_lips/masculino_neutralizacao.jpg",
+        "sugestao1": "Sugestão: A cada 4 gotas de laranja neutralizador, colocar 2 gotas de vermelho tom rosado.",
+        "dica": "DICA: Pode seguir as mesmas dicas de neutralização feminina, mudando apenas os movimentos de implantação para NÃO definir ou marcar o contorno dos lábios."
+      }
+    ]
+  },
+  {
+    "categoria": "LÁBIO ESCURO (LEVE, MÉDIO E INTENSO)",
+    "swatch": "#5A2822",
+    "casos": [
+      {
+        "desejo": "Levemente Escurecidos (Analogia: Voal)",
+        "foto": "assets/real_lips/levemente_escurecido_resultado.jpg",
+        "sugestao1": "Não precisa neutralizar pesado. A nuance escura pode somar com o pigmento; acrescente 1 pitada de branco e 1 pitada de laranja se a cor escolhida não tiver.",
+        "paraPensar": "Quando o lábio é levemente escuro, essa nuance escura pode somar com o pigmento. O laranja entra para aquecer."
+      },
+      {
+        "desejo": "Escuro Médio (Analogia: Voal com Forro)",
+        "foto": "assets/real_lips/escuro_medio_resultado.jpg",
+        "sugestao1": "Sugestão para neutralizar: A cada 4 gotas de laranja, 2 gotas de vermelho fundo rosado (resultado cicatrizado 90% rosado).",
+        "obs": "A escolha da cor fica por conta do profissional. NÃO PROMETE VERMELHO na 1ª sessão sem clarear bem antes.",
+        "dica": "DICA: A mistura deve conter obrigatoriamente laranja ou amarelo, vermelho e branco."
+      },
+      {
+        "desejo": "Escuro Intenso (Analogia: Blackout)",
+        "foto": "assets/real_lips/escuro_intenso_sessoes.jpg",
+        "sugestao1": "Lâmina bem rígida com alta concentração de melanina. NA PRIMEIRA SESSÃO É PROIBIDO APLICAR ROSA OU VERMELHO! A meta exclusiva é diminuir a intensidade do escuro.",
+        "sugestao2": "Fórmula 1: Branco (CI 77891) + Laranja (CI 21110) meio a meio (1:1). Fórmula 2: Laranja + Rosa clarinho (1:1) para resultado pêssego.",
+        "paraPensar": "O segredo é aumentar o contraste da cor do lábio neutralizado com a pele da cliente. Intervalo de retorno mínimo de 60 dias."
+      }
+    ]
+  }
+]

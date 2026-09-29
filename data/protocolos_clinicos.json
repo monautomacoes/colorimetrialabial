@@ -1,0 +1,256 @@
+[
+  {
+    "id": "PALIDO_ROSA_CLARO",
+    "tipo_labio": "pálido",
+    "desejo_cliente": "rosa claro",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Fórmula Padrão (Efeito Nude)",
+        "receita": "8 gotas de Vermelho Rosado (CI 12475) + 4 gotas de Branco Dióxido (CI 77891)."
+      },
+      {
+        "opcao": "Fórmula Pêssego Suave",
+        "receita": "6 gotas de Vermelho Rosado + 6 gotas de Rosa Seco ou Pêssego com Dióxido."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.25mm Taper Longo",
+      "velocidade": "6.0V a 6.5V",
+      "passadas": "2 a 3 passadas rápidas em pêndulo",
+      "angulo": "90° perpendicular à pele",
+      "profundidade": "0.2mm (derme papilar superficial)"
+    },
+    "regra_para_pensar": "Quanto mais claro o tom desejado, maior a proporção de Dióxido de Titânio (CI 77891) necessária para dar opacidade e reflexo luminoso.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "PALIDO_ROSA_INTENSO",
+    "tipo_labio": "pálido",
+    "desejo_cliente": "rosa intenso",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Fórmula Vibrante Dani Pontello",
+        "receita": "5 gotas de Vermelho de Fundo Rosado (CI 12475) + 2 gotas de Laranja Neutralizador (CI 21110) para aquecer."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.25mm ou 0.30mm",
+      "velocidade": "6.5V",
+      "passadas": "3 passadas uniformes em pixel",
+      "angulo": "90°",
+      "profundidade": "0.25mm"
+    },
+    "regra_para_pensar": "Se a cor rosada contiver o CI 12475 sem o CI 21110 pré-misturado, é OBRIGATÓRIO acrescentar 1 gota de Laranja a cada 4 gotas de Vermelho para não cicatrizar rosa envelhecido.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "PALIDO_MEIO_TERMO_COR_DE_BOCA",
+    "tipo_labio": "pálido",
+    "desejo_cliente": "meio termo (cor de boca)",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Cor de Boca Marcado",
+        "receita": "4 gotas de Vermelho Rosado + 4 gotas de Vermelho Quente (1:1)."
+      },
+      {
+        "opcao": "Cor de Boca Nude Suave",
+        "receita": "4 gotas de Vermelho Quente + 4 gotas de Rosa Seco com Dióxido (1:1)."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm",
+      "velocidade": "6.2V",
+      "passadas": "2 passadas de contorno invisível + preenchimento",
+      "angulo": "75° a 90°",
+      "profundidade": "0.2mm"
+    },
+    "indicacao_perfil": "Ideal para clientes indecisas que buscam revitalização sem parecer batom marcado.",
+    "regra_para_pensar": "O dióxido confere aspecto aveludado/nude opaco. Para transparência e efeito gloss, elimine o branco da fórmula.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "PALIDO_VERMELHO",
+    "tipo_labio": "pálido",
+    "desejo_cliente": "vermelho",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Vermelho Batom Clássico",
+        "receita": "8 gotas de Vermelho Quente puro (CI 56110 ou 15850)."
+      },
+      {
+        "opcao": "Ajuste de Reflexo",
+        "receita": "Se o vermelho for muito alaranjado, adicione 2 gotas de Vermelho Rosado para quebrar o excesso de alaranjado."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm ou 3RL",
+      "velocidade": "6.8V",
+      "passadas": "3 a 4 passadas cruzadas com saturação gradual",
+      "angulo": "90°",
+      "profundidade": "0.25mm"
+    },
+    "dica_bancada": "Faça um traço de teste de degradação com cotonete molhado na ficha para confirmar o tom degradado na pele da cliente antes de iniciar.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "ROSADO_INTENSIFICAR_ROSA",
+    "tipo_labio": "rosado",
+    "desejo_cliente": "intensificar o rosa já existente",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Fórmula Intensificadora",
+        "receita": "6 gotas de Vermelho Rosado + 1.5 gotas de Laranja com Dióxido para estabilização cromática."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.25mm",
+      "velocidade": "6.0V",
+      "passadas": "2 passadas leves",
+      "angulo": "90°",
+      "profundidade": "0.2mm"
+    },
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "ROSADO_VERMELHO",
+    "tipo_labio": "rosado",
+    "desejo_cliente": "vermelho",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Efeito Carmim",
+        "receita": "8 gotas de Vermelho Puro da família de degradação avermelhada."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm",
+      "velocidade": "6.5V",
+      "passadas": "3 passadas",
+      "angulo": "90°",
+      "profundidade": "0.25mm"
+    },
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "MASCULINO_AVERMELHADO",
+    "tipo_labio": "masculino",
+    "desejo_cliente": "avermelhado natural",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Revitalização Masculina",
+        "receita": "6 gotas de Vermelho Quente + 2 gotas de Laranja Neutralizador (sem marcar bordo labial)."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.25mm ou 3RL em pontilhismo",
+      "velocidade": "5.8V",
+      "passadas": "2 passadas de varredura sem traçar linha de contorno",
+      "angulo": "60° a 90°",
+      "profundidade": "0.18mm"
+    },
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "MASCULINO_NEUTRALIZACAO_MEDIA",
+    "tipo_labio": "masculino",
+    "desejo_cliente": "neutralização grau médio",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Fórmula Masculina de Clareamento",
+        "receita": "6 gotas de Laranja Neutralizador + 2 gotas de Vermelho Rosado."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm em efeito pixel disperso",
+      "velocidade": "6.2V",
+      "passadas": "2 passadas suaves sem definição de contorno",
+      "angulo": "90°",
+      "profundidade": "0.2mm"
+    },
+    "dica_bancada": "Em lábios masculinos, NUNCA marque o contorno exterior. Trabalhe exclusivamente do centro para dentro em movimentos dispersos.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "ESCURO_LEVE",
+    "tipo_labio": "escuro leve (analogia: voal)",
+    "desejo_cliente": "clarear e colorir",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Alvo Rosa Claro",
+        "receita": "6 gotas de Vermelho Rosado + 3 gotas de Branco + 2 gotas de Laranja Aquecedor."
+      },
+      {
+        "opcao": "Alvo Rosa Intenso",
+        "receita": "6 gotas de Vermelho Rosado + 2 gotas de Laranja Neutralizador."
+      },
+      {
+        "opcao": "Alvo Vermelho",
+        "receita": "6 gotas de Vermelho Quente + 2 gotas de Rosa Seco com Dióxido."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.25mm Taper Longo",
+      "velocidade": "6.5V",
+      "passadas": "3 passadas de pixel regular",
+      "angulo": "90°",
+      "profundidade": "0.22mm"
+    },
+    "regra_para_pensar": "O fundo castanho/arroxeado leve vai somar com o pigmento. Acrescente sempre 1 pitada de Laranja e Dióxido se o frasco escolhido não possuir esses CIs.",
+    "intervalo_retorno_dias": 30
+  },
+  {
+    "id": "ESCURO_MEDIO",
+    "tipo_labio": "escuro médio (analogia: voal com forro)",
+    "desejo_cliente": "neutralização",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Neutralização Rosada Média",
+        "receita": "6 gotas de Laranja Neutralizador (CI 21110) + 3 gotas de Vermelho Rosado (CI 12475)."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm ou 3RL",
+      "velocidade": "6.8V",
+      "passadas": "3 passadas uniforme sem exercer pressão de mão",
+      "angulo": "90°",
+      "profundidade": "0.25mm"
+    },
+    "regras_criticas": [
+      "A escolha da cor cabe exclusivamente à profissional com base na física das cores; a cliente não escolhe cor alvo nesta fase inicial.",
+      "Em 90% dos casos o resultado cicatrizado de 1ª sessão será um rosado/pêssego saudável.",
+      "NÃO PROMETA VERMELHO para lábios melanínicos sem antes clarear a base em sessões prévias.",
+      "A mistura deve conter obrigatoriamente: Laranja (CI 21110), Vermelho Rosado e uma fração de Dióxido de Titânio.",
+      "INTERVALO DE RETORNO: 45 dias corridos."
+    ],
+    "intervalo_retorno_dias": 45
+  },
+  {
+    "id": "ESCURO_INTENSO",
+    "tipo_labio": "escuro intenso (analogia: blackout)",
+    "desejo_cliente": "neutralização obrigatória de 1ª sessão",
+    "sugestoes_gotas": [
+      {
+        "opcao": "Fórmula Clareadora Suprema Dani Pontello",
+        "receita": "6 gotas de Branco Dióxido (CI 77891) + 6 gotas de Laranja Neutralizador (CI 21110) [Proporção 1:1]."
+      },
+      {
+        "opcao": "Fórmula Pêssego Clareador",
+        "receita": "6 gotas de Laranja + 6 gotas de Rosa Claro com alta carga de Dióxido."
+      }
+    ],
+    "parametros_tecnicos": {
+      "agulha": "1RL 0.30mm ou 0.35mm em efeito pixel cirúrgico",
+      "velocidade": "7.0V",
+      "passadas": "Máximo 3 passadas rápidas sem agredir o tecido",
+      "angulo": "90° rígido",
+      "profundidade": "0.25mm"
+    },
+    "regras_criticas": [
+      "Lâmina labial espessa e rígida com alta concentração de melanócitos ativáveis.",
+      "NA PRIMEIRA SESSÃO É PROIBIDO aplicar pigmento com objetivo de deixar rosa ou vermelho; a meta EXCLUSIVA é diminuir a densidade do tom escuro.",
+      "Não execute procedimento focado na foto de pós-imediato. O foco absoluto é a cicatrização de 60 dias.",
+      "A alta carga de Dióxido de Titânio (branco) reduz expressivamente a quantidade de sessões necessárias, opacificando a melanina profunda.",
+      "INTERVALO MÍNIMO OBRIGATÓRIO: 60 dias corridos para evitar escurecimento rebote inflamatório."
+    ],
+    "intervalo_retorno_dias": 60
+  }
+]
