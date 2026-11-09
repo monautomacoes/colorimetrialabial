@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom Luxury Clinical Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=9.0">
+  <link rel="stylesheet" href="styles.css?v=10.0">
 </head>
 <body>
 
@@ -77,7 +77,19 @@
           <i class="fa-brands fa-instagram"></i>
           <span>@danisilvapontello</span>
         </a>
-        <span class="badge-clinical" title="Proteção contra ataques XSS e Prompt Injection ativada"><i class="fa-solid fa-shield-halved"></i> v5.0 MVP VERCEL</span>
+        <span class="badge-clinical" title="Proteção contra ataques XSS e Prompt Injection ativada"><i class="fa-solid fa-shield-halved"></i> v6.0 CYBER-SEC</span>
+
+        <!-- User Authentication & Session Badge -->
+        <div id="auth-user-bar" class="auth-user-bar" style="display: none;">
+          <div class="user-badge-pill" id="user-badge-pill">
+            <i class="fa-solid fa-user-shield" id="user-badge-icon" style="color: var(--gold-accent);"></i>
+            <span id="user-badge-name" style="font-weight: 700; color: #FFFFFF;">Carregando...</span>
+            <span id="user-badge-days" class="license-days-pill">...</span>
+          </div>
+          <button id="btn-logout" class="btn-logout" title="Encerrar Sessão com Segurança">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -118,12 +130,275 @@
           <i class="fa-solid fa-box-archive"></i>
           <span>Prontuário &amp; Banco de Frascos</span>
         </button>
+        <!-- Master Exclusive Tab (PontelloD2) -->
+        <button class="nav-tab-btn master-only-tab" id="nav-btn-master" data-tab="tab-master" style="display: none;">
+          <i class="fa-solid fa-crown" style="color: #D4AF37;"></i>
+          <span>Painel Master &amp; Licenças</span>
+        </button>
       </nav>
     </div>
   </div>
 
   <!-- Main Work Area Container -->
   <main class="main-workspace">
+
+    
+    <!-- ==========================================
+         TAB 9: PAINEL MASTER & LICENÇAS (EXCLUSIVO PONTELLOD2)
+         ========================================== -->
+    <section id="tab-master" class="workspace-tab">
+
+      <div class="clinical-info-card" style="border-left-color: #D4AF37; background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(20, 18, 16, 0.95) 100%);">
+        <div class="info-card-icon" style="color: #D4AF37;">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="info-card-body">
+          <h3 style="color: var(--gold-champagne);"><i class="fa-solid fa-crown"></i> Painel de Gestão Master — Dani Pontello (@PontelloD2)</h3>
+          <p>Módulo de controle de acessos comerciais, emissão de licenças temporárias/vitalícias para profissionais de micropigmentação e auditoria ativa de cibersegurança.</p>
+        </div>
+      </div>
+
+      <!-- Master Stats Metric Grid -->
+      <div class="master-stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-wrap" style="background: rgba(34, 197, 94, 0.15); color: #4ADE80;">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <div class="stat-meta">
+            <span class="stat-label">Assinantes Ativos</span>
+            <strong class="stat-val" id="stat-active-users">0</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrap" style="background: rgba(245, 158, 11, 0.15); color: #FBBF24;">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <div class="stat-meta">
+            <span class="stat-label">Vencendo em 7 Dias</span>
+            <strong class="stat-val" id="stat-expiring-soon">0</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrap" style="background: rgba(239, 68, 68, 0.15); color: #F87171;">
+            <i class="fa-solid fa-user-xmark"></i>
+          </div>
+          <div class="stat-meta">
+            <span class="stat-label">Licenças Expiradas</span>
+            <strong class="stat-val" id="stat-expired-users">0</strong>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrap" style="background: rgba(212, 175, 55, 0.15); color: #D4AF37;">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <div class="stat-meta">
+            <span class="stat-label">Bloqueios de Cibersegurança</span>
+            <strong class="stat-val" id="stat-threats-blocked">0</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Admin Work Area: Create License Form & User Management Table -->
+      <div class="clinical-grid" style="margin-top: 1.8rem;">
+
+        <!-- Form: Register New Client / License -->
+        <div class="card-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-user-plus card-icon"></i>
+              <h2>Cadastrar Novo Acesso / Licença</h2>
+            </div>
+            <span class="step-indicator" style="background: rgba(212, 175, 55, 0.15); color: var(--gold-champagne);">Novo Assinante</span>
+          </div>
+
+          <form id="form-create-license" onsubmit="return false;">
+            <div class="form-section">
+              <label class="field-label" for="new-client-name">
+                <i class="fa-solid fa-id-card"></i> Nome da Profissional / Clínica
+              </label>
+              <input type="text" id="new-client-name" class="custom-input" placeholder="Ex: Dra. Mariana Costa — Estética Labial" required>
+            </div>
+
+            <div class="form-panel-grid" style="grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+              <div class="form-section">
+                <label class="field-label" for="new-client-user">
+                  <i class="fa-solid fa-user"></i> Usuário de Acesso (Login)
+                </label>
+                <input type="text" id="new-client-user" class="custom-input" placeholder="Ex: marianacosta" required autocomplete="off">
+              </div>
+
+              <div class="form-section">
+                <label class="field-label" for="new-client-pass">
+                  <i class="fa-solid fa-key"></i> Senha de Acesso
+                </label>
+                <div style="position: relative;">
+                  <input type="text" id="new-client-pass" class="custom-input" placeholder="Senha segura" required style="padding-right: 2.5rem;">
+                  <button type="button" id="btn-generate-password" title="Gerar Senha Aleatória Segura" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--gold-accent); cursor: pointer; font-size: 1rem;">
+                    <i class="fa-solid fa-dice"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-panel-grid" style="grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+              <div class="form-section">
+                <label class="field-label" for="new-client-duration">
+                  <i class="fa-solid fa-calendar-days"></i> Período da Licença
+                </label>
+                <select id="new-client-duration" class="custom-select">
+                  <option value="30">30 Dias (Mensal)</option>
+                  <option value="60">60 Dias (Bimestral)</option>
+                  <option value="90" selected>90 Dias (Trimestral)</option>
+                  <option value="180">180 Dias (Semestral)</option>
+                  <option value="365">365 Dias (Anual — 1 Ano)</option>
+                  <option value="9999">Vitalício / Indeterminado</option>
+                </select>
+              </div>
+
+              <div class="form-section">
+                <label class="field-label" for="new-client-contact">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp / Contato
+                </label>
+                <input type="text" id="new-client-contact" class="custom-input" placeholder="Ex: (11) 98765-4321">
+              </div>
+            </div>
+
+            <button type="button" id="btn-submit-create-license" class="btn-action-primary" style="margin-top: 1rem;">
+              <i class="fa-solid fa-shield-check"></i> Emitir Licença Criptografada &amp; Ativar Acesso
+            </button>
+          </form>
+
+          <!-- Generated Credentials Share Box -->
+          <div id="credentials-share-box" style="display: none; margin-top: 1.2rem; background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 8px; padding: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+              <strong style="color: #4ADE80; font-size: 0.88rem;"><i class="fa-solid fa-circle-check"></i> Licença Gerada com Sucesso!</strong>
+              <button type="button" id="btn-copy-client-credentials" class="btn-action-outline" style="padding: 0.3rem 0.7rem; font-size: 0.78rem;">
+                <i class="fa-solid fa-copy"></i> Copiar para WhatsApp
+              </button>
+            </div>
+            <pre id="credentials-text-preview" style="font-family: monospace; font-size: 0.82rem; color: #FFFFFF; background: #0E0C0B; padding: 0.8rem; border-radius: 6px; white-space: pre-wrap; line-height: 1.4;"></pre>
+          </div>
+        </div>
+
+        <!-- Master Security Controls & Password Change -->
+        <div class="card-box">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-lock-open card-icon"></i>
+              <h2>Credenciais Master (@PontelloD2)</h2>
+            </div>
+            <span class="step-indicator" style="background: rgba(212, 175, 55, 0.15); color: var(--gold-champagne);">Segurança Máxima</span>
+          </div>
+
+          <form id="form-change-master-pass" onsubmit="return false;">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Altere a senha da sua conta de Administradora Master (<strong style="color: var(--gold-champagne);">PontelloD2</strong>). A senha é armazenada com algoritmo criptográfico SHA-256 e sal único individual.
+            </p>
+
+            <div class="form-section">
+              <label class="field-label" for="master-current-pass">
+                <i class="fa-solid fa-lock"></i> Senha Master Atual
+              </label>
+              <input type="password" id="master-current-pass" class="custom-input" placeholder="Digite a senha atual" required>
+            </div>
+
+            <div class="form-panel-grid" style="grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+              <div class="form-section">
+                <label class="field-label" for="master-new-pass">
+                  <i class="fa-solid fa-key"></i> Nova Senha Master
+                </label>
+                <input type="password" id="master-new-pass" class="custom-input" placeholder="Mínimo 8 caracteres" required>
+              </div>
+
+              <div class="form-section">
+                <label class="field-label" for="master-new-pass-confirm">
+                  <i class="fa-solid fa-check-double"></i> Confirmar Nova Senha
+                </label>
+                <input type="password" id="master-new-pass-confirm" class="custom-input" placeholder="Repita a nova senha" required>
+              </div>
+            </div>
+
+            <button type="button" id="btn-update-master-pass" class="btn-action-outline" style="width: 100%; justify-content: center; padding: 0.85rem; font-weight: 700;">
+              <i class="fa-solid fa-shield-halved"></i> Atualizar Senha Master Criptografada
+            </button>
+          </form>
+
+          <!-- Database Export / Import Backup Section -->
+          <div style="margin-top: 1.8rem; border-top: 1px solid var(--border-subtle); padding-top: 1.2rem;">
+            <label class="field-label" style="color: var(--gold-champagne);">
+              <i class="fa-solid fa-database"></i> Backup &amp; Migração de Assinantes
+            </label>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+              Exporte todos os clientes e licenças cadastrados em formato JSON criptografado para migrar de aparelho ou salvar em local seguro.
+            </p>
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <button type="button" id="btn-export-users-db" class="btn-action-outline" style="flex: 1; justify-content: center;">
+                <i class="fa-solid fa-download"></i> Exportar Banco (.json)
+              </button>
+              <label class="btn-action-outline" style="flex: 1; justify-content: center; cursor: pointer;">
+                <i class="fa-solid fa-upload"></i> Restaurar Banco
+                <input type="file" id="input-import-users-db" accept=".json" style="display: none;">
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Users & Licenses Table -->
+      <div class="card-box" style="margin-top: 1.8rem;">
+        <div class="card-header" style="flex-wrap: wrap; gap: 1rem;">
+          <div class="card-title-group">
+            <i class="fa-solid fa-users-viewfinder card-icon"></i>
+            <h2>Clientes Cadastrados &amp; Status das Licenças</h2>
+          </div>
+          <div style="position: relative; min-width: 260px;">
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.85rem;"></i>
+            <input type="text" id="input-search-clients" class="custom-input" placeholder="Filtrar por nome ou usuário..." style="padding-left: 2.2rem; padding-top: 0.45rem; padding-bottom: 0.45rem; font-size: 0.85rem;">
+          </div>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="license-table" id="table-clients-license">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Usuário</th>
+                <th>Nome / Clínica</th>
+                <th>Contato</th>
+                <th>Expira Em</th>
+                <th>Dias Restantes</th>
+                <th>Ações de Licença</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-clients-license">
+              <!-- Dynamically populated by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Cybersecurity Audit Log Table -->
+      <div class="card-box" style="margin-top: 1.8rem;">
+        <div class="card-header">
+          <div class="card-title-group">
+            <i class="fa-solid fa-shield-cat card-icon" style="color: #22C55E;"></i>
+            <h2>Auditoria de Cibersegurança &amp; Registro de Acessos</h2>
+          </div>
+          <button type="button" id="btn-clear-audit-logs" class="btn-text-danger" style="font-size: 0.8rem;">
+            <i class="fa-solid fa-trash"></i> Limpar Histórico de Logs
+          </button>
+        </div>
+
+        <div class="audit-log-container" id="audit-log-list">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+    </section>
 
     <!-- ==========================================
          TAB 1: ASSISTENTE DE BANCADA (DIAGNOSIS ENGINE)
@@ -696,7 +971,84 @@
     <span class="corner-logo-text">Dani Pontello</span>
   </div>
 
+  
+  <!-- ==========================================
+       GATEKEEPER LOGIN OVERLAY (CYBERSECURITY ACCESS CONTROL)
+       ========================================== -->
+  <div id="login-gatekeeper-overlay" class="login-gatekeeper-overlay">
+    <div class="login-luxury-card">
+      <div class="login-brand-header">
+        <div class="brand-avatar-frame" style="width: 65px; height: 65px; margin: 0 auto 0.8rem; box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);">
+          <svg class="brand-logo-svg" viewBox="0 0 100 100" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" stroke="url(#goldGrad)" stroke-width="4"/>
+            <path d="M25 44 C35 28, 65 28, 75 44 C65 52, 35 52, 25 44 Z" fill="url(#roseGrad)"/>
+            <path d="M25 47 C35 68, 65 68, 75 47 C60 62, 40 62, 25 47 Z" fill="url(#goldGrad)"/>
+            <text x="50" y="56" font-family="'Cinzel', serif" font-weight="800" font-size="20" fill="#FFFFFF" text-anchor="middle">DP</text>
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F8D5CE"/>
+                <stop offset="50%" stop-color="#E5A89E"/>
+                <stop offset="100%" stop-color="#D4AF37"/>
+              </linearGradient>
+              <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E5A89E"/>
+                <stop offset="100%" stop-color="#A8544B"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h2 style="font-family: 'Cinzel', serif; font-size: 1.45rem; color: #FFFFFF; font-weight: 800; letter-spacing: 0.5px;">
+          Dani Pontello
+        </h2>
+        <p style="font-size: 0.82rem; color: var(--gold-champagne); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+          Colorimetria Labial &amp; Guia Oficial de Bancada
+        </p>
+        <span class="security-shield-badge">
+          <i class="fa-solid fa-lock"></i> Acesso Restrito &bull; Criptografia SHA-256
+        </span>
+      </div>
+
+      <!-- Lockout Alert Box -->
+      <div id="login-lockout-alert" class="login-alert-box" style="display: none;">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span id="login-lockout-msg">Muitas tentativas incorretas. Acesso temporariamente bloqueado por segurança.</span>
+      </div>
+
+      <form id="form-gatekeeper-login" onsubmit="return false;">
+        <div class="form-section" style="margin-bottom: 1.1rem;">
+          <label class="field-label" for="login-username" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-user-shield"></i> Usuário ou E-mail Autorizado
+          </label>
+          <input type="text" id="login-username" class="custom-input" placeholder="Digite seu usuário cadastrado..." required autofocus autocomplete="username">
+        </div>
+
+        <div class="form-section" style="margin-bottom: 1.3rem;">
+          <label class="field-label" for="login-password" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-key"></i> Senha de Acesso
+          </label>
+          <div style="position: relative;">
+            <input type="password" id="login-password" class="custom-input" placeholder="Digite sua senha..." required autocomplete="current-password" style="padding-right: 2.5rem;">
+            <button type="button" id="btn-toggle-login-pass" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.95rem;">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="button" id="btn-execute-login" class="btn-action-primary" style="margin-top: 0.5rem; font-size: 1rem; padding: 0.95rem;">
+          <i class="fa-solid fa-shield-halved"></i> Autenticar &amp; Entrar no Sistema
+        </button>
+      </form>
+
+      <div class="login-footer-info">
+        <p><i class="fa-solid fa-circle-info" style="color: var(--gold-accent);"></i> Plataforma comercial protegida contra Injeção de Prompt e Ataques de Força Bruta.</p>
+        <p style="margin-top: 0.4rem;">
+          Deseja adquirir sua licença de uso? <a href="https://www.instagram.com/danisilvapontello" target="_blank" rel="noopener" style="color: var(--gold-champagne); font-weight: 700; text-decoration: underline;">Fale com @danisilvapontello</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
   <!-- App Main Logic JavaScript -->
-  <script src="app.js?v=9.0"></script>
+  <script src="app.js?v=10.0"></script>
 </body>
 </html>
